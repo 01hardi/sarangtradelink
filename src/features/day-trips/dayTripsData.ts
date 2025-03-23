@@ -80,7 +80,7 @@ export const dayTrips: DayTrip[] = [
     description: 'Discover the prestigious university city of Cambridge and enjoy a traditional punting experience on the River Cam.',
     longDescription: 'Visit the historic colleges of Cambridge University, walk through the picturesque streets, and enjoy a traditional punting trip along the River Cam. Learn about the scientific discoveries and literary masterpieces that originated in this center of academic excellence, home to 31 colleges and numerous Nobel Prize winners.',
     highlights: [
-      'Guided tour of King's College and Chapel',
+      'Guided tour of King\'s College and Chapel',
       'Traditional punting on the River Cam',
       'Walking tour of the historic city center',
       'View of the Mathematical Bridge',
@@ -158,7 +158,7 @@ export const dayTrips: DayTrip[] = [
     highlights: [
       'Overnight stay in Lakeside hotel',
       'Cruise on Lake Windermere',
-      'Visit to Wordsworth's Dove Cottage',
+      'Visit to Wordsworth\'s Dove Cottage',
       'Scenic walks in the fells',
       'Visit to Grasmere village'
     ],
