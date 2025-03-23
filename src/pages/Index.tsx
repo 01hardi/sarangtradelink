@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Map, Globe, CreditCard, Building, PlaneTakeoff, ShieldCheck, Ticket, UserCheck 
+  Map, Globe, CreditCard, Building, PlaneTakeoff, ShieldCheck, Ticket, UserCheck, Car, MapPin, Book
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
@@ -92,8 +92,8 @@ const Index = () => {
             />
             <ServiceCard 
               title="UK Day Trips"
-              description="Unforgettable day excursions to Stonehenge, Oxford, Warner Bros Studio, and more."
-              icon={<PlaneTakeoff size={24} />}
+              description="Unforgettable day excursions to Edinburgh, Oxford, Cambridge, and other picturesque UK destinations."
+              icon={<Car size={24} />}
               href="/services/day-trips"
               delay={400}
             />
@@ -166,8 +166,57 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Featured Destinations */}
+      {/* UK Day Trips Section */}
       <section className="py-20 bg-travel-light-gray">
+        <div className="container mx-auto px-4">
+          <SectionHeading 
+            title="Explore the UK Beyond London"
+            subtitle="Discover the charm and history of the United Kingdom with our curated day trips"
+            centered
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <ServiceCard 
+              title="Historic Cities"
+              description="Explore the cobbled streets of York, the scholarly atmosphere of Oxford and Cambridge, and Shakespeare's Stratford-upon-Avon."
+              icon={<Book size={24} />}
+              href="/services/day-trips"
+              delay={100}
+              className="h-full"
+            />
+            <ServiceCard 
+              title="Scenic Countryside"
+              description="Experience the natural beauty of the Lake District and the picturesque villages of the Cotswolds with our guided tours."
+              icon={<MapPin size={24} />}
+              href="/services/day-trips"
+              delay={200}
+              className="h-full"
+            />
+            <ServiceCard 
+              title="Cultural Experiences"
+              description="Immerse yourself in Beatles history in Liverpool or explore the magical world of Harry Potter at Warner Bros. Studio."
+              icon={<Ticket size={24} />}
+              href="/services/day-trips"
+              delay={300}
+              className="h-full"
+            />
+          </div>
+          
+          <div className="text-center mt-10">
+            <Button 
+              asChild
+              className="bg-travel-gold hover:bg-travel-navy text-white"
+            >
+              <Link to="/services/day-trips">
+                View All UK Day Trips
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+      
+      {/* Featured Destinations */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <SectionHeading 
             title="Popular Destinations"
@@ -185,9 +234,9 @@ const Index = () => {
             />
             
             <FeaturedDestination 
-              title="Stonehenge & Bath"
-              description="Discover the mysterious ancient monument of Stonehenge and explore the elegant Georgian city of Bath with its Roman baths and picturesque streets on this popular day trip from London."
-              imageUrl="https://images.unsplash.com/photo-1599833975787-5c143f373c30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              title="Edinburgh City Tour"
+              description="Discover the historic Royal Mile, Edinburgh Castle, and the charming Old Town of Scotland's capital city. Our guided tours bring Edinburgh's rich history and culture to life."
+              imageUrl="https://images.unsplash.com/photo-1572031922880-13a90a979e59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
               href="/services/day-trips"
               imagePosition="left"
             />
@@ -204,7 +253,7 @@ const Index = () => {
       </section>
       
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-20 bg-travel-light-gray">
         <div className="container mx-auto px-4">
           <SectionHeading 
             title="What Our Clients Say"
@@ -230,7 +279,7 @@ const Index = () => {
             />
             
             <TestimonialCard 
-              quote="The day trip to Stonehenge and Bath was exceptional. Our guide was knowledgeable and entertaining, and the transportation was comfortable."
+              quote="The day trip to Edinburgh was exceptional. Our guide was knowledgeable and entertaining, and the transportation was comfortable."
               author="Maria Rodriguez"
               location="Spain"
               rating={4}
