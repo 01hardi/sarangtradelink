@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
