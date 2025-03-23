@@ -7,7 +7,7 @@ import TourPackages from '@/features/london-experience/TourPackages';
 import TabsSection from '@/features/london-experience/TabsSection';
 import TestimonialsSection from '@/features/london-experience/TestimonialsSection';
 import BookingSection from '@/features/london-experience/BookingSection';
-import { tourPackages, attractions, cityPasses } from '@/features/london-experience/data';
+import { tourPackages, attractions, cityPasses, testimonials } from '@/features/london-experience/data';
 
 const LondonExperience = () => {
   return (

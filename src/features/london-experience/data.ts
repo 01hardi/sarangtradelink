@@ -1,4 +1,3 @@
-
 import { TourPackage } from './TourPackageCard';
 import { Attraction } from './AttractionCard';
 import { CityPass } from './CityPassCard';
@@ -129,5 +128,37 @@ export const cityPasses: CityPass[] = [
     description: "Unlimited travel on London's public transport network, including the Underground, buses, and trains within London zones.",
     price: "From £13.50 (1-day) to £68.60 (7-day)",
     image: "/images/travel-card.jpg"
+  }
+];
+
+export interface Testimonial {
+  quote: string;
+  author: string;
+  location: string;
+  rating: number;
+  imageUrl: string;
+}
+
+export const testimonials: Testimonial[] = [
+  {
+    quote: "The Royal London Tour exceeded all my expectations! Our guide was incredibly knowledgeable about the monarchy's history and took us to places I wouldn't have discovered on my own. Watching the Changing of the Guard with expert commentary made it so much more meaningful.",
+    author: "Sarah Johnson",
+    location: "New York, USA",
+    rating: 5,
+    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=150&h=150"
+  },
+  {
+    quote: "We booked the Historic London Walking Tour and it was the highlight of our trip. Our guide brought London's past to life with fascinating stories. The small group size made it feel personal, and we appreciated having time to take photos and ask questions.",
+    author: "David Chen",
+    location: "Toronto, Canada",
+    rating: 4,
+    imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=150&h=150"
+  },
+  {
+    quote: "The Literary London Experience was perfect for a book lover like me! Walking in the footsteps of Dickens and Shakespeare while hearing passages from their works was magical. The afternoon tea in that beautiful library was the perfect ending to a wonderful day.",
+    author: "Emma Williams",
+    location: "Melbourne, Australia",
+    rating: 5,
+    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=150&h=150"
   }
 ];

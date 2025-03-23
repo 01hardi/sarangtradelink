@@ -1,6 +1,8 @@
 
 import React from 'react';
 import SectionHeading from '@/components/SectionHeading';
+import TestimonialCard from '@/components/TestimonialCard';
+import { testimonials } from './data';
 
 const TestimonialsSection: React.FC = () => {
   return (
@@ -11,9 +13,18 @@ const TestimonialsSection: React.FC = () => {
           title="Unforgettable London Experiences"
           light={true}
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-          {/* Testimonial content placeholder */}
-          {/* This section can be expanded in the future */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard
+              key={index}
+              quote={testimonial.quote}
+              author={testimonial.author}
+              location={testimonial.location}
+              rating={testimonial.rating}
+              imageUrl={testimonial.imageUrl}
+              className="bg-white/[0.03] border-white/10 text-white"
+            />
+          ))}
         </div>
       </div>
     </section>
