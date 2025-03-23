@@ -10,21 +10,21 @@ interface TourPackagesProps {
 
 const TourPackages: React.FC<TourPackagesProps> = ({ tourPackages }) => {
   return (
-    <section className="py-16 bg-travel-light-gray">
+    <section className="py-12 bg-travel-light-gray">
       <div className="container mx-auto px-4">
         <SectionHeading 
           subtitle="Expert-Led Tours" 
           title="London Tours"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
           {tourPackages.map(tour => (
             <TourPackageCard key={tour.id} tour={tour} />
           ))}
         </div>
-        <div className="text-center mt-10">
+        <div className="text-center mt-8">
           <Button 
             variant="outline" 
-            className="border-travel-gold text-travel-gold hover:bg-travel-gold hover:text-white transition-colors"
+            className="border-travel-gold text-travel-gold hover:bg-travel-gold hover:text-white"
           >
             View All Tours
           </Button>

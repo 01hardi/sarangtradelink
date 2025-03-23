@@ -6,15 +6,15 @@ import { testimonials } from './data';
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section className="py-16 bg-travel-navy text-white">
+    <section className="py-12 bg-travel-navy text-white">
       <div className="container mx-auto px-4">
         <SectionHeading 
           subtitle="What Our Clients Say" 
-          title="Unforgettable London Experiences"
+          title="Customer Testimonials"
           light={true}
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-          {testimonials.map((testimonial, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          {testimonials.slice(0, 3).map((testimonial, index) => (
             <TestimonialCard
               key={index}
               quote={testimonial.quote}
@@ -22,7 +22,7 @@ const TestimonialsSection: React.FC = () => {
               location={testimonial.location}
               rating={testimonial.rating}
               imageUrl={testimonial.imageUrl}
-              className="bg-white/[0.03] border-white/10 text-white"
+              className="bg-white/[0.03] text-white"
             />
           ))}
         </div>

@@ -4,41 +4,35 @@ import SectionHeading from '@/components/SectionHeading';
 
 const IntroSection: React.FC = () => {
   return (
-    <section className="py-16">
+    <section className="py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <SectionHeading 
               subtitle="London Highlights" 
-              title="Explore the Best of London with Our Guided Tours"
+              title="Explore London with Our Guided Tours"
               className="text-left"
             />
             <p className="text-gray-600 mb-6">
-              Experience the best of London with our expertly crafted tours and exclusive access to the city's top attractions. 
-              From royal palaces to historic landmarks, hidden gems to cultural hotspots, our knowledgeable guides will bring 
-              London's rich history and vibrant present to life.
+              Experience the best of London with our expertly crafted tours and access to the city's top attractions. 
+              Our knowledgeable guides will bring London's rich history and vibrant present to life.
             </p>
-            <p className="text-gray-600 mb-6">
-              Whether you're a first-time visitor or a returning traveler, our London Experience services are designed to provide 
-              unforgettable memories and deeper insights into this magnificent city. Choose from our range of guided tours, 
-              skip-the-line tickets, and city passes for a seamless London adventure.
-            </p>
-            <div className="grid grid-cols-2 gap-6 mt-8">
-              <div className="bg-travel-light-gray p-4 rounded-lg text-center">
-                <h3 className="text-travel-gold text-3xl font-bold mb-2">25+</h3>
-                <p className="text-travel-navy font-medium">Unique Tours</p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-travel-light-gray p-3 rounded-lg text-center">
+                <h3 className="text-travel-gold text-2xl font-bold mb-1">25+</h3>
+                <p className="text-travel-navy text-sm">Unique Tours</p>
               </div>
-              <div className="bg-travel-light-gray p-4 rounded-lg text-center">
-                <h3 className="text-travel-gold text-3xl font-bold mb-2">50+</h3>
-                <p className="text-travel-navy font-medium">Attractions</p>
+              <div className="bg-travel-light-gray p-3 rounded-lg text-center">
+                <h3 className="text-travel-gold text-2xl font-bold mb-1">50+</h3>
+                <p className="text-travel-navy text-sm">Attractions</p>
               </div>
-              <div className="bg-travel-light-gray p-4 rounded-lg text-center">
-                <h3 className="text-travel-gold text-3xl font-bold mb-2">100%</h3>
-                <p className="text-travel-navy font-medium">Satisfaction</p>
+              <div className="bg-travel-light-gray p-3 rounded-lg text-center">
+                <h3 className="text-travel-gold text-2xl font-bold mb-1">100%</h3>
+                <p className="text-travel-navy text-sm">Satisfaction</p>
               </div>
-              <div className="bg-travel-light-gray p-4 rounded-lg text-center">
-                <h3 className="text-travel-gold text-3xl font-bold mb-2">15+</h3>
-                <p className="text-travel-navy font-medium">Expert Guides</p>
+              <div className="bg-travel-light-gray p-3 rounded-lg text-center">
+                <h3 className="text-travel-gold text-2xl font-bold mb-1">15+</h3>
+                <p className="text-travel-navy text-sm">Expert Guides</p>
               </div>
             </div>
           </div>
@@ -46,7 +40,7 @@ const IntroSection: React.FC = () => {
             <img 
               src="/images/london-experience-main.jpg" 
               alt="London Experience" 
-              className="rounded-lg shadow-lg w-full h-auto"
+              className="rounded-lg w-full h-auto"
             />
           </div>
         </div>

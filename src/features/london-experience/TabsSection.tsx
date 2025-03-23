@@ -13,16 +13,16 @@ interface TabsSectionProps {
 
 const TabsSection: React.FC<TabsSectionProps> = ({ attractions, cityPasses }) => {
   return (
-    <section className="py-16">
+    <section className="py-12">
       <div className="container mx-auto px-4">
         <Tabs defaultValue="attractions" className="w-full">
-          <div className="flex justify-center mb-8">
-            <TabsList className="bg-travel-light-gray">
-              <TabsTrigger value="attractions" className="data-[state=active]:bg-travel-gold data-[state=active]:text-white">
+          <div className="flex justify-center mb-6">
+            <TabsList>
+              <TabsTrigger value="attractions">
                 Major Landmarks
               </TabsTrigger>
-              <TabsTrigger value="passes" className="data-[state=active]:bg-travel-gold data-[state=active]:text-white">
-                Skip-the-Line & City Passes
+              <TabsTrigger value="passes">
+                City Passes
               </TabsTrigger>
             </TabsList>
           </div>
