@@ -97,7 +97,7 @@ export const dayTrips: DayTrip[] = [
     duration: 'Full Day (12 hours)',
     price: '£125',
     description: 'The ultimate day trip combining three iconic locations: Windsor Castle, mysterious Stonehenge, and historic Bath.',
-    longDescription: 'This comprehensive tour takes you to three of England's most famous destinations. Visit Windsor Castle, the oldest inhabited castle in the world and residence of the Royal Family. Next, uncover the mysteries of ancient Stonehenge, followed by exploration of the elegant Georgian city of Bath with its Roman heritage.',
+    longDescription: 'This comprehensive tour takes you to three of England\'s most famous destinations. Visit Windsor Castle, the oldest inhabited castle in the world and residence of the Royal Family. Next, uncover the mysteries of ancient Stonehenge, followed by exploration of the elegant Georgian city of Bath with its Roman heritage.',
     highlights: [
       'Entry to Windsor Castle with audio guide',
       'Visit to Stonehenge with audio guide',
@@ -116,7 +116,7 @@ export const dayTrips: DayTrip[] = [
     duration: 'Full Day (8 hours)',
     price: '£70',
     description: 'Escape to the vibrant seaside city of Brighton for a day of coastal charm and eclectic culture.',
-    longDescription: 'Discover why Brighton is one of England's most beloved seaside destinations. Visit the exotic Royal Pavilion, stroll along the famous Brighton Pier, and explore the quirky shops of The Lanes. This tour offers the perfect mix of guided exploration and free time to enjoy the beach, shops, and restaurants at your leisure.',
+    longDescription: 'Discover why Brighton is one of England\'s most beloved seaside destinations. Visit the exotic Royal Pavilion, stroll along the famous Brighton Pier, and explore the quirky shops of The Lanes. This tour offers the perfect mix of guided exploration and free time to enjoy the beach, shops, and restaurants at your leisure.',
     highlights: [
       'Entry to the Royal Pavilion',
       'Brighton Pier visit',
@@ -154,7 +154,7 @@ export const dayTrips: DayTrip[] = [
     duration: '2 Days (overnight stay)',
     price: '£250',
     description: 'Experience the breathtaking landscapes of the Lake District National Park with an overnight stay.',
-    longDescription: 'This two-day adventure takes you to England's most beautiful national park. Discover stunning lakes, dramatic mountains, and picturesque villages that inspired poets and writers for centuries. The tour includes an overnight stay in a charming lakeside hotel, boat rides on Lake Windermere, and guided walks through some of the most scenic landscapes in Britain.',
+    longDescription: 'This two-day adventure takes you to England\'s most beautiful national park. Discover stunning lakes, dramatic mountains, and picturesque villages that inspired poets and writers for centuries. The tour includes an overnight stay in a charming lakeside hotel, boat rides on Lake Windermere, and guided walks through some of the most scenic landscapes in Britain.',
     highlights: [
       'Overnight stay in Lakeside hotel',
       'Cruise on Lake Windermere',
