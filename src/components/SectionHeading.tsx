@@ -20,13 +20,11 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   light = false,
 }) => {
   return (
-    <div className={cn('mb-10', centered && 'text-center', className)}>
+    <div className={cn('mb-8', centered && 'text-center', className)}>
       <h2 
         className={cn(
-          'font-playfair text-3xl md:text-4xl font-bold relative inline-block pb-4',
+          'font-playfair text-2xl md:text-3xl font-bold relative',
           light ? 'text-white' : 'text-travel-navy',
-          'after:content-[""] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-travel-gold after:w-16',
-          centered && 'after:left-1/2 after:-translate-x-1/2'
         )}
       >
         {title}
@@ -34,7 +32,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
       {subtitle && (
         <p 
           className={cn(
-            'mt-4 text-lg',
+            'mt-3 text-base',
             light ? 'text-gray-300' : 'text-travel-dark-gray',
             subtitleClassName
           )}

@@ -23,40 +23,40 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   return (
     <div 
       className={cn(
-        'bg-white p-6 md:p-8 rounded-lg shadow-md border border-gray-100',
+        'bg-white p-5 rounded-md shadow-sm',
         className
       )}
     >
       {/* Rating */}
-      <div className="flex mb-4">
+      <div className="flex mb-3">
         {[...Array(5)].map((_, i) => (
           <Star
             key={i}
-            size={18}
-            fill={i < rating ? '#BF9D58' : 'none'}
-            color={i < rating ? '#BF9D58' : '#D4D4D4'}
+            size={16}
+            fill={i < rating ? '#9A7D0A' : 'none'}
+            color={i < rating ? '#9A7D0A' : '#D4D4D4'}
             className="mr-1"
           />
         ))}
       </div>
       
       {/* Quote */}
-      <p className="text-travel-dark-gray italic mb-6">"{quote}"</p>
+      <p className="text-travel-dark-gray text-sm italic mb-4">"{quote}"</p>
       
       {/* Author */}
       <div className="flex items-center">
         {imageUrl && (
-          <div className="mr-4">
+          <div className="mr-3">
             <img 
               src={imageUrl} 
               alt={author} 
-              className="w-12 h-12 rounded-full object-cover"
+              className="w-10 h-10 rounded-full object-cover"
             />
           </div>
         )}
         <div>
-          <h4 className="font-semibold text-travel-navy">{author}</h4>
-          <p className="text-sm text-gray-500">{location}</p>
+          <h4 className="font-medium text-sm text-travel-navy">{author}</h4>
+          <p className="text-xs text-gray-500">{location}</p>
         </div>
       </div>
     </div>

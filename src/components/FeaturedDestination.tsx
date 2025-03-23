@@ -25,13 +25,13 @@ const FeaturedDestination: React.FC<FeaturedDestinationProps> = ({
   return (
     <div 
       className={cn(
-        'flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100',
+        'flex flex-col md:flex-row items-center bg-white rounded-md overflow-hidden shadow-sm',
         className,
         imagePosition === 'left' && 'md:flex-row-reverse'
       )}
     >
       {/* Image */}
-      <div className="w-full md:w-1/2 h-72 md:h-96 image-container">
+      <div className="w-full md:w-1/2 h-64 md:h-80 image-container">
         <img 
           src={imageUrl} 
           alt={title}
@@ -40,17 +40,17 @@ const FeaturedDestination: React.FC<FeaturedDestinationProps> = ({
       </div>
       
       {/* Content */}
-      <div className="w-full md:w-1/2 p-6 md:p-10">
-        <h3 className="font-playfair text-2xl md:text-3xl font-bold text-travel-navy mb-4">{title}</h3>
-        <p className="text-travel-dark-gray mb-6">{description}</p>
+      <div className="w-full md:w-1/2 p-6 md:p-8">
+        <h3 className="font-playfair text-xl md:text-2xl font-bold text-travel-navy mb-3">{title}</h3>
+        <p className="text-travel-dark-gray text-sm mb-4">{description}</p>
         <Button 
           asChild
           variant="default" 
-          className="bg-travel-gold hover:bg-travel-navy text-white group"
+          className="bg-travel-navy hover:bg-travel-navy/90 text-white group"
         >
           <Link to={href}>
             <span>Explore Destination</span>
-            <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300" />
+            <ArrowRight size={14} className="ml-1" />
           </Link>
         </Button>
       </div>

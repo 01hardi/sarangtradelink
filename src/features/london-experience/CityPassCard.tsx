@@ -15,17 +15,17 @@ interface CityPassCardProps {
 
 const CityPassCard: React.FC<CityPassCardProps> = ({ pass }) => {
   return (
-    <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+    <div className="bg-white rounded-md shadow-sm overflow-hidden">
       <img 
         src={pass.image} 
         alt={pass.name} 
-        className="w-full h-48 object-cover"
+        className="w-full h-44 object-cover"
       />
       <div className="p-4">
-        <h3 className="font-bold text-lg mb-2">{pass.name}</h3>
+        <h3 className="font-medium text-base mb-2">{pass.name}</h3>
         <p className="text-gray-600 text-sm mb-3">{pass.description}</p>
-        <div className="text-travel-navy font-semibold mb-3">{pass.price}</div>
-        <Button className="w-full bg-travel-gold hover:bg-travel-navy">
+        <div className="text-travel-navy font-medium mb-3">{pass.price}</div>
+        <Button className="w-full bg-travel-navy hover:bg-travel-navy/90 text-white" size="sm">
           Purchase Pass
         </Button>
       </div>

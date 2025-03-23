@@ -13,7 +13,7 @@ const DayTripsList: React.FC = () => {
     : dayTrips.filter(trip => trip.category === activeCategory);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <SectionHeading 
           title="Explore Beyond London"
@@ -21,8 +21,8 @@ const DayTripsList: React.FC = () => {
           centered
         />
         
-        <div className="mt-8 mb-12 flex justify-center">
-          <Tabs defaultValue="all" className="w-full max-w-3xl">
+        <div className="mt-6 mb-8 flex justify-center">
+          <Tabs defaultValue="all" className="w-full max-w-md">
             <TabsList className="grid w-full grid-cols-4">
               <TabsTrigger value="all" onClick={() => setActiveCategory('all')}>All</TabsTrigger>
               <TabsTrigger value="historic" onClick={() => setActiveCategory('historic')}>Historic</TabsTrigger>
@@ -32,7 +32,7 @@ const DayTripsList: React.FC = () => {
           </Tabs>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {filteredTrips.map((trip) => (
             <DayTripCard key={trip.id} trip={trip} />
           ))}

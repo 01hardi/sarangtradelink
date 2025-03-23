@@ -25,26 +25,26 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <Link 
       to={href}
       className={cn(
-        'group block p-6 bg-white rounded-lg shadow-sm border border-gray-100 hover-lift card-hover',
+        'group block p-5 bg-white rounded-md hover:shadow-sm transition-all duration-300',
         className,
-        'transition-all duration-300 opacity-0 animate-fade-in',
+        'opacity-0 animate-fade-in',
       )}
       style={{ animationDelay: `${delay}ms` }}
     >
       <div className="flex items-start">
-        <div className="mr-5 p-3 bg-travel-light-gray rounded-lg text-travel-navy group-hover:bg-travel-gold group-hover:text-white transition-colors duration-300">
+        <div className="mr-4 p-2 bg-travel-light-gray rounded-md text-travel-navy">
           {icon}
         </div>
         <div>
-          <h3 className="font-playfair text-xl font-semibold text-travel-navy mb-2 group-hover:text-travel-gold transition-colors duration-300">
+          <h3 className="font-medium text-lg text-travel-navy mb-2">
             {title}
           </h3>
-          <p className="text-travel-dark-gray mb-4">
+          <p className="text-travel-dark-gray text-sm mb-3">
             {description}
           </p>
-          <div className="flex items-center font-medium text-travel-navy group-hover:text-travel-gold transition-colors duration-300">
+          <div className="flex items-center text-sm font-medium text-travel-navy group-hover:text-travel-gold transition-colors duration-300">
             <span>Learn More</span>
-            <ArrowRight size={18} className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300" />
+            <ArrowRight size={16} className="ml-1 transform group-hover:translate-x-1 transition-transform duration-300" />
           </div>
         </div>
       </div>
