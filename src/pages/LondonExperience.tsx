@@ -141,7 +141,6 @@ const LondonExperience = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
       <div className="relative bg-travel-navy py-20">
         <div className="absolute inset-0 opacity-20 bg-[url('/images/london-experience-bg.jpg')] bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -164,7 +163,6 @@ const LondonExperience = () => {
         </div>
       </div>
 
-      {/* Highlights Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -214,7 +212,6 @@ const LondonExperience = () => {
         </div>
       </section>
 
-      {/* Service Overview */}
       <section className="py-16 bg-travel-light-gray">
         <div className="container mx-auto px-4">
           <SectionHeading 
@@ -291,7 +288,6 @@ const LondonExperience = () => {
         </div>
       </section>
 
-      {/* Top Attractions & City Passes */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="attractions" className="w-full">
@@ -364,13 +360,12 @@ const LondonExperience = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section className="py-16 bg-travel-navy text-white">
         <div className="container mx-auto px-4">
           <SectionHeading 
             subtitle="What Our Clients Say" 
             title="Unforgettable London Experiences"
-            className="text-white"
+            light={true}
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
             {/* Add testimonials content here */}
@@ -378,14 +373,13 @@ const LondonExperience = () => {
         </div>
       </section>
 
-      {/* Booking Section */}
       <section className="py-16 bg-travel-navy text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <SectionHeading 
               subtitle="Book Your Experience" 
               title="Ready to Explore London?"
-              textColor="text-white"
+              light={true}
             />
             <div className="mt-8">
               <InquiryForm />
