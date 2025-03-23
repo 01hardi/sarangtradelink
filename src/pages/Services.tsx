@@ -55,10 +55,10 @@ const Services = () => {
       icon: <Car className="h-12 w-12 text-travel-gold" />,
       path: "/services/day-trips",
       features: [
-        "Stonehenge & Bath excursions",
-        "Oxford & Cambridge tours",
-        "Cotswolds village experiences",
-        "Warner Bros. Studio Tour (Harry Potter)"
+        "Edinburgh historic royal mile tours",
+        "Oxford & Cambridge university experiences",
+        "Lake District & Cotswolds village tours",
+        "Shakespeare's Stratford & Beatles' Liverpool"
       ]
     }
   ];

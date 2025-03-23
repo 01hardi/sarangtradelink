@@ -94,8 +94,16 @@ export const ContactInfoFields: React.FC<FormFieldsProps> = ({ form }) => {
                 <SelectItem value="london-experience">London Experience</SelectItem>
                 <SelectItem value="visa-services">Visa Services</SelectItem>
                 <SelectItem value="accommodation">Accommodation & Transfers</SelectItem>
-                <SelectItem value="day-trips">UK Day Trips</SelectItem>
-                <SelectItem value="other">Other</SelectItem>
+                <SelectItem value="edinburgh">Edinburgh City Tour</SelectItem>
+                <SelectItem value="york">Historic York</SelectItem>
+                <SelectItem value="cambridge">Cambridge University Tour</SelectItem>
+                <SelectItem value="oxford">Oxford Day Trip</SelectItem>
+                <SelectItem value="lake-district">Lake District Nature Tour</SelectItem>
+                <SelectItem value="cotswolds">Cotswolds Village Experience</SelectItem>
+                <SelectItem value="liverpool">Beatles Liverpool Tour</SelectItem>
+                <SelectItem value="stratford">Shakespeare's Stratford-upon-Avon</SelectItem>
+                <SelectItem value="harry-potter">Warner Bros. Harry Potter Studio</SelectItem>
+                <SelectItem value="other">Other Destinations</SelectItem>
               </SelectContent>
             </Select>
             <FormMessage />
