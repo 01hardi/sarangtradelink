@@ -13,6 +13,7 @@ import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
+import DayTrips from "./pages/DayTrips";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +30,7 @@ const App = () => (
           <Route path="/services/london-experience" element={<LondonExperience />} />
           <Route path="/services/visa-services" element={<NotFound />} />
           <Route path="/services/accommodation" element={<NotFound />} />
-          <Route path="/services/day-trips" element={<NotFound />} />
+          <Route path="/services/day-trips" element={<DayTrips />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
