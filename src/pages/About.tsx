@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
@@ -36,7 +35,7 @@ const About = () => {
               <SectionHeading 
                 subtitle="Our Story" 
                 title="We Create Unforgettable Experiences in London"
-                alignment="left"
+                className="text-left"
               />
               <p className="text-gray-600 mb-6">
                 Founded in 2010, WanderLondon started with a simple mission: to help visitors experience London like a local. 

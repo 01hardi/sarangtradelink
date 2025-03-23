@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 import SectionHeading from '@/components/SectionHeading';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Map, Passport, Building, Car } from 'lucide-react';
+import { ArrowRight, Map, BookOpen, Building, Car } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -26,7 +26,7 @@ const Services = () => {
       id: 2,
       title: "Visa Services",
       description: "Navigate the UK visa application process with confidence. Our visa specialists provide expert guidance and support to ensure a smooth application experience for tourists, business travelers, and students.",
-      icon: <Passport className="h-12 w-12 text-travel-gold" />,
+      icon: <BookOpen className="h-12 w-12 text-travel-gold" />,
       path: "/services/visa-services",
       features: [
         "Application assistance & document review",

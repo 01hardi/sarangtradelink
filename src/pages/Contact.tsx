@@ -36,7 +36,7 @@ const Contact = () => {
               <SectionHeading 
                 subtitle="Get In Touch" 
                 title="We're Here to Help You"
-                alignment="left"
+                className="text-left"
               />
               <p className="text-gray-600 mb-8">
                 Have questions about our services or need more information? Our friendly team is ready to assist you with any inquiries you may have about planning your perfect London experience.

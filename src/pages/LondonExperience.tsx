@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
@@ -165,15 +164,15 @@ const LondonExperience = () => {
         </div>
       </div>
 
-      {/* Service Overview */}
+      {/* Highlights Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <SectionHeading 
-                subtitle="Explore The City" 
-                title="Discover London's Magic with Our Expert Guides"
-                alignment="left"
+                subtitle="London Highlights" 
+                title="Explore the Best of London with Our Guided Tours"
+                className="text-left"
               />
               <p className="text-gray-600 mb-6">
                 Experience the best of London with our expertly crafted tours and exclusive access to the city's top attractions. 
@@ -215,7 +214,7 @@ const LondonExperience = () => {
         </div>
       </section>
 
-      {/* London Tours */}
+      {/* Service Overview */}
       <section className="py-16 bg-travel-light-gray">
         <div className="container mx-auto px-4">
           <SectionHeading 
@@ -362,6 +361,20 @@ const LondonExperience = () => {
               </div>
             </TabsContent>
           </Tabs>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 bg-travel-navy text-white">
+        <div className="container mx-auto px-4">
+          <SectionHeading 
+            subtitle="What Our Clients Say" 
+            title="Unforgettable London Experiences"
+            className="text-white"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+            {/* Add testimonials content here */}
+          </div>
         </div>
       </section>
 
