@@ -20,7 +20,7 @@ export const tourPackages: TourPackage[] = [
       "See St. James's Palace and Kensington Palace",
       "Expert guide with royal history knowledge"
     ],
-    image: "https://images.unsplash.com/photo-1529963183134-61a90db47eaf?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const tourPackages: TourPackage[] = [
       "Explore medieval streets and historic pubs",
       "Learn about the Great Fire of London and the Plague"
     ],
-    image: "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1520967824895-b4568b3ce2e3?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ export const tourPackages: TourPackage[] = [
       "Visit the British Library's treasures",
       "Enjoy afternoon tea in a historic literary location"
     ],
-    image: "https://images.unsplash.com/photo-1544142047-9979579827f3?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ export const tourPackages: TourPackage[] = [
       "Learn about sustainable architecture trends",
       "Photograph London's most distinctive buildings"
     ],
-    image: "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -87,12 +87,12 @@ export const attractions: Attraction[] = [
   {
     name: "Buckingham Palace",
     description: "The London residence and administrative headquarters of the monarch of the United Kingdom.",
-    image: "https://images.unsplash.com/photo-1549889097-8e40e4b36dd4?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1602940659805-770d1b3b9911?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "British Museum",
     description: "Public institution dedicated to human history, art, and culture with a permanent collection of 8 million works.",
-    image: "https://images.unsplash.com/photo-1574322854287-eebec2705fa5?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1498378624751-ead6e3b57fcd?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "London Eye",
@@ -102,12 +102,12 @@ export const attractions: Attraction[] = [
   {
     name: "Westminster Abbey",
     description: "Gothic abbey church and UNESCO World Heritage Site, the traditional place of coronation and burial for English monarchs.",
-    image: "https://images.unsplash.com/photo-1543799382-9a90fa26d9a3?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1494922275507-58dc039ed337?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "St. Paul's Cathedral",
     description: "Anglican cathedral with a distinctive dome, sitting at the highest point of the City of London.",
-    image: "https://images.unsplash.com/photo-1545040580-57d3097ea076?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1618430419986-453075243b7a?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -116,19 +116,19 @@ export const cityPasses: CityPass[] = [
     name: "London Pass",
     description: "Access to 80+ attractions including the Tower of London, Westminster Abbey, and a Hop-on Hop-off Bus Tour.",
     price: "From £89 (1-day) to £169 (6-day)",
-    image: "https://images.unsplash.com/photo-1533760881669-80db4d7b4c15?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1551879400-111a9087cd86?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "London Explorer Pass",
     description: "Choose 3, 5, or 7 attractions from a list of 20+ popular sites, including Madame Tussauds and the London Eye.",
     price: "From £64 (3 attractions) to £109 (7 attractions)",
-    image: "https://images.unsplash.com/photo-1520967824895-b4568b3ce2e3?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1610568781018-995405522539?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "London Travelcard",
     description: "Unlimited travel on London's public transport network, including the Underground, buses, and trains within London zones.",
     price: "From £13.50 (1-day) to £68.60 (7-day)",
-    image: "https://images.unsplash.com/photo-1543875893-65a68abb91af?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1543873087-741232b8c5b9?auto=format&fit=crop&w=800&q=80"
   }
 ];
 

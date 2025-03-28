@@ -38,7 +38,7 @@ const IntroSection: React.FC = () => {
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1590059300824-aa0b78d2ff34?auto=format&fit=crop&w=800&q=80" 
+              src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=800&q=80" 
               alt="London Experience" 
               className="rounded-lg w-full h-auto"
               onError={(e) => {

@@ -29,7 +29,7 @@ export const dayTrips: DayTrip[] = [
       'Free time for shopping and lunch',
       'Harry Potter filming locations'
     ],
-    image: 'https://images.unsplash.com/photo-1582653291997-079b4f628af3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1604156788856-2ce5f2076199?auto=format&fit=crop&w=800&q=80',
     category: 'historic',
     distance: '56 miles from London'
   },
@@ -48,7 +48,7 @@ export const dayTrips: DayTrip[] = [
       'Entry to the Roman Baths',
       'Free time to explore Bath city center'
     ],
-    image: 'https://images.unsplash.com/photo-1559562935-63deaaba692d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1564411170396-4ab0b8b6afb7?auto=format&fit=crop&w=800&q=80',
     category: 'historic',
     distance: '87 miles from London'
   },
@@ -67,7 +67,7 @@ export const dayTrips: DayTrip[] = [
       'Optional lunch at a traditional English pub',
       'Visit to Arlington Row in Bibury'
     ],
-    image: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1588436706487-9d55d73a39e3?auto=format&fit=crop&w=800&q=80',
     category: 'countryside',
     distance: '75 miles from London'
   },
@@ -86,7 +86,7 @@ export const dayTrips: DayTrip[] = [
       'View of the Mathematical Bridge',
       'Free time for lunch and exploring'
     ],
-    image: 'https://images.unsplash.com/photo-1590510134975-b9c0577868c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1597524678053-5e6dae98a29c?auto=format&fit=crop&w=800&q=80',
     category: 'historic',
     distance: '64 miles from London'
   },
@@ -105,7 +105,7 @@ export const dayTrips: DayTrip[] = [
       'Professional guide throughout the day',
       'Luxury air-conditioned coach transportation'
     ],
-    image: 'https://images.unsplash.com/photo-1585668823343-93416a16faa5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1533003505519-6a9b92ed4911?auto=format&fit=crop&w=800&q=80',
     category: 'historic',
     distance: 'Multiple locations'
   },
@@ -124,7 +124,7 @@ export const dayTrips: DayTrip[] = [
       'Optional seafront activities',
       'Free time for lunch and exploration'
     ],
-    image: 'https://images.unsplash.com/photo-1565618754318-9430d148a3d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1577889883631-bd97b137e829?auto=format&fit=crop&w=800&q=80',
     category: 'cultural',
     distance: '54 miles from London'
   },
@@ -143,7 +143,7 @@ export const dayTrips: DayTrip[] = [
       'Scenic drive through Kent countryside',
       'Professional guide throughout'
     ],
-    image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1630924196018-1966d0686df9?auto=format&fit=crop&w=800&q=80',
     category: 'historic',
     distance: '40 miles from London'
   },
@@ -162,8 +162,9 @@ export const dayTrips: DayTrip[] = [
       'Scenic walks in the fells',
       'Visit to Grasmere village'
     ],
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1568632234576-9b14d2c3e294?auto=format&fit=crop&w=800&q=80',
     category: 'countryside',
     distance: '260 miles from London'
   }
 ];
+
