@@ -12,13 +12,7 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
   return (
     <Link 
       to="/" 
-      className={cn(
-        "font-playfair text-2xl font-bold transition-colors duration-300",
-        {
-          "text-travel-navy": scrolled || isOpen,
-          "text-white": !scrolled && !isOpen,
-        }
-      )}
+      className="font-playfair text-2xl font-bold text-travel-navy"
       aria-label="Sarang Tradelink"
     >
       Sarang<span className="text-travel-gold">Tradelink</span>
