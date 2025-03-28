@@ -39,7 +39,7 @@ const LondonExperience = () => {
       <TourPackages tourPackages={validatedTourPackages} />
       <TabsSection attractions={validatedAttractions} cityPasses={validatedCityPasses} />
       <TestimonialsSection />
-      <BookingSection />
+      <BookingSection title="Ready to Explore London?" subtitle="Make Your Inquiry" />
     </Layout>
   );
 };

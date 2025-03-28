@@ -10,7 +10,7 @@ interface BookingSectionProps {
 
 const BookingSection: React.FC<BookingSectionProps> = ({ 
   title = "Ready to Explore London?",
-  subtitle = "Book Your Experience"
+  subtitle = "Make Your Inquiry"
 }) => {
   return (
     <section className="py-12 bg-travel-navy text-white">

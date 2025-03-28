@@ -85,7 +85,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             variant="default"
             className="mt-4 w-full bg-travel-gold hover:bg-travel-navy text-white transition-colors"
           >
-            Book Consultation
+            Make Inquiry
           </Button>
         </nav>
       </div>

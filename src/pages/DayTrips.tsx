@@ -10,7 +10,7 @@ const DayTrips: React.FC = () => {
     <Layout>
       <DayTripsHero />
       <DayTripsList />
-      <BookingSection />
+      <BookingSection title="Ready to Explore the UK?" subtitle="Make Your Inquiry" />
     </Layout>
   );
 };

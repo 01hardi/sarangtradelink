@@ -71,7 +71,7 @@ const TourPackageCard: React.FC<TourPackageCardProps> = ({ tour }) => {
       </CardContent>
       <CardFooter>
         <Button className="w-full bg-travel-gold hover:bg-travel-navy">
-          Book Now
+          Make Inquiry
         </Button>
       </CardFooter>
     </Card>

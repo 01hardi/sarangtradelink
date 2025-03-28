@@ -74,7 +74,7 @@ const DayTripCard: React.FC<DayTripCardProps> = ({ trip }) => {
               size="sm"
               className="bg-travel-navy hover:bg-travel-navy/90 text-white"
             >
-              Book
+              Inquire
             </Button>
           </div>
         </CardFooter>
@@ -129,7 +129,7 @@ const DayTripCard: React.FC<DayTripCardProps> = ({ trip }) => {
                 </div>
               </div>
               <Button className="w-full bg-travel-navy hover:bg-travel-navy/90 text-white">
-                Book This Trip
+                Make Inquiry
               </Button>
             </div>
           </div>

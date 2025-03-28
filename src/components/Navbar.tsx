@@ -67,7 +67,7 @@ const Navbar = () => {
               variant="default"
               className="bg-travel-gold hover:bg-travel-navy text-white"
             >
-              Book Consultation
+              Make Inquiry
             </Button>
           </div>
           
