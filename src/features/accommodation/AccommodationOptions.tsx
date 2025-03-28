@@ -11,28 +11,28 @@ const AccommodationOptions: React.FC = () => {
       title: "Luxury Hotels",
       description: "Experience the height of London luxury with our carefully selected 5-star hotels in prime locations.",
       features: ["Concierge service", "Spa facilities", "Fine dining", "Central locations", "Exclusive packages"],
-      image: "/images/luxury-hotel.jpg",
+      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80",
       icon: <Star className="h-6 w-6" />
     },
     {
       title: "Boutique Hotels",
       description: "Stay in charming, character-filled boutique hotels that offer unique experiences and personalized service.",
       features: ["Unique design", "Personalized service", "Local experience", "Intimate atmosphere", "Special amenities"],
-      image: "/images/boutique-hotel.jpg",
+      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
       icon: <Coffee className="h-6 w-6" />
     },
     {
       title: "Budget-Friendly Options",
       description: "Quality accommodations that won't break the bank, perfect for travelers who prefer to spend on experiences.",
       features: ["Great value", "Clean and comfortable", "Convenient locations", "Free WiFi", "Breakfast options"],
-      image: "/images/budget-hotel.jpg",
+      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
       icon: <CreditCard className="h-6 w-6" />
     },
     {
       title: "Serviced Apartments",
       description: "Home-like comfort with hotel amenities, ideal for longer stays or family travel to London.",
       features: ["Fully equipped kitchen", "Living areas", "Housekeeping", "Laundry facilities", "Extended stay discounts"],
-      image: "/images/serviced-apartment.jpg",
+      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
       icon: <Bed className="h-6 w-6" />
     }
   ];
@@ -50,7 +50,7 @@ const AccommodationOptions: React.FC = () => {
             <Card key={index} className="overflow-hidden shadow-sm border-0">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src={option.image || "/images/placeholder.svg"} 
+                  src={option.image} 
                   alt={option.title} 
                   className="w-full h-full object-cover"
                 />

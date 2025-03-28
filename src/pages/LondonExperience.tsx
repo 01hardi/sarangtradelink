@@ -7,15 +7,39 @@ import TourPackages from '@/features/london-experience/TourPackages';
 import TabsSection from '@/features/london-experience/TabsSection';
 import TestimonialsSection from '@/features/london-experience/TestimonialsSection';
 import BookingSection from '@/features/london-experience/BookingSection';
-import { tourPackages, attractions, cityPasses, testimonials } from '@/features/london-experience/data';
+import { tourPackages, attractions, cityPasses } from '@/features/london-experience/data';
 
 const LondonExperience = () => {
+  // Ensure all attractions have valid image URLs
+  const validatedAttractions = attractions.map(attraction => ({
+    ...attraction,
+    image: attraction.image.startsWith('http') ? 
+      attraction.image : 
+      `https://images.unsplash.com/photo-${attraction.image.split('/images/')[1] || '1566073771259-6a8506099945'}?auto=format&fit=crop&w=800&q=80`
+  }));
+
+  // Ensure all tour packages have valid image URLs
+  const validatedTourPackages = tourPackages.map(tour => ({
+    ...tour,
+    image: tour.image.startsWith('http') ? 
+      tour.image : 
+      `https://images.unsplash.com/photo-${tour.image.split('/images/')[1] || '1588778226089-02b66a38adbe'}?auto=format&fit=crop&w=800&q=80`
+  }));
+
+  // Ensure all city passes have valid image URLs
+  const validatedCityPasses = cityPasses.map(pass => ({
+    ...pass,
+    image: pass.image.startsWith('http') ? 
+      pass.image : 
+      `https://images.unsplash.com/photo-${pass.image.split('/images/')[1] || '1414235077428-338989a2e8c0'}?auto=format&fit=crop&w=800&q=80`
+  }));
+
   return (
     <Layout>
       <HeroSection />
       <IntroSection />
-      <TourPackages tourPackages={tourPackages} />
-      <TabsSection attractions={attractions} cityPasses={cityPasses} />
+      <TourPackages tourPackages={validatedTourPackages} />
+      <TabsSection attractions={validatedAttractions} cityPasses={validatedCityPasses} />
       <TestimonialsSection />
       <BookingSection />
     </Layout>

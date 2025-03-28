@@ -15,11 +15,16 @@ interface AttractionCardProps {
 const AttractionCard: React.FC<AttractionCardProps> = ({ attraction }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md">
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden h-52">
         <img 
           src={attraction.image} 
           alt={attraction.name} 
-          className="w-full h-52 object-cover transition-transform duration-500 hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          onError={(e) => {
+            // Fallback to a placeholder image if the original fails to load
+            const target = e.target as HTMLImageElement;
+            target.src = "https://images.unsplash.com/photo-1470904228243-795988a47f61?auto=format&fit=crop&w=800&q=80";
+          }}
         />
       </div>
       <div className="p-5">
