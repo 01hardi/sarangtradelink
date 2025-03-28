@@ -17,15 +17,6 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
     setIsOpen(false);
     setServicesOpen(false);
   }, [location.pathname]);
@@ -57,12 +48,7 @@ const Navbar = () => {
       
       {/* Main Navigation */}
       <header 
-        className={cn(
-          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 bg-white shadow-sm",
-          {
-            "lg:pt-0": true,
-          }
-        )}
+        className="fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-sm"
       >
         <div className="container mx-auto flex justify-between items-center p-4">
           <Logo scrolled={scrolled} isOpen={isOpen} />
@@ -79,7 +65,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Button
               variant="default"
-              className="bg-travel-gold hover:bg-travel-navy text-white transition-colors duration-300"
+              className="bg-travel-gold hover:bg-travel-navy text-white"
             >
               Book Consultation
             </Button>

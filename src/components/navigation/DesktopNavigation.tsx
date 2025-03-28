@@ -28,7 +28,7 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
             <button 
               onClick={() => setServicesOpen(!servicesOpen)}
               className={cn(
-                "flex items-center space-x-1 font-medium text-travel-navy transition-colors duration-300",
+                "flex items-center space-x-1 font-medium text-travel-navy",
                 {
                   "text-travel-gold": isActive(link.path),
                   "hover:text-travel-gold": true,
@@ -42,7 +42,7 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
             <Link 
               to={link.path}
               className={cn(
-                "font-medium text-travel-navy transition-colors duration-300",
+                "font-medium text-travel-navy",
                 {
                   "text-travel-gold": isActive(link.path),
                   "hover:text-travel-gold": true,
@@ -57,7 +57,7 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
           {link.dropdown && (
             <div 
               className={cn(
-                "absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible",
+                "absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible",
                 {
                   "opacity-100 visible": servicesOpen
                 }
@@ -68,7 +68,7 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
                   <Link
                     key={subLink.name}
                     to={subLink.path}
-                    className="block px-4 py-2 text-travel-navy hover:bg-travel-light-gray hover:text-travel-gold transition-colors duration-200"
+                    className="block px-4 py-2 text-travel-navy hover:bg-travel-light-gray hover:text-travel-gold"
                   >
                     {subLink.name}
                   </Link>
