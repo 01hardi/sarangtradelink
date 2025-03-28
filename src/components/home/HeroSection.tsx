@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 relative z-20">
         <div className="max-w-2xl">
           <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-slide-up" style={{ animationDelay: '300ms', animationDuration: '1s' }}>
-            Discover London's True Character
+            Discover the magic of London & the UK
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 animate-slide-up" style={{ animationDelay: '600ms', animationDuration: '1s' }}>
             Explore iconic landmarks and hidden secrets with expert guides who know the city inside out.
