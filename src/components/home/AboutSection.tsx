@@ -11,13 +11,13 @@ const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="inline-block text-xs font-medium px-3 py-1 bg-travel-cream text-travel-gold rounded-full mb-4">
-              ABOUT WANDERLONDON
+              ABOUT SARANG TRADELINK
             </div>
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-travel-navy mb-6">
               Your Trusted Travel Partner For UK Adventures
             </h2>
             <p className="text-travel-dark-gray mb-6">
-              At WanderLondon, we are passionate about sharing the magic and history of London and the UK with travelers from around the world. 
+              At Sarang Tradelink, we are passionate about sharing the magic and history of London and the UK with travelers from around the world. 
               With over 10 years of experience in the travel industry, our team of local experts curates exceptional experiences tailored to your preferences.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
