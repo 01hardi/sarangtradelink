@@ -59,10 +59,10 @@ const Navbar = () => {
         className={cn(
           "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
           {
-            "bg-white shadow-md": scrolled || isOpen,
+            "bg-white/95 backdrop-blur-sm shadow-sm": scrolled || isOpen,
             "bg-transparent": !scrolled && !isOpen,
             "lg:bg-transparent": !scrolled && !isOpen,
-            "lg:pt-8": !scrolled && !isOpen,
+            "lg:pt-6": !scrolled && !isOpen,
           }
         )}
       >
@@ -81,7 +81,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Button
               variant="default"
-              className="bg-travel-gold hover:bg-travel-navy text-white transition-colors duration-300"
+              className="bg-gray-900 hover:bg-gray-800 text-white transition-colors duration-300 rounded-md"
             >
               Book Consultation
             </Button>
@@ -89,7 +89,7 @@ const Navbar = () => {
           
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-travel-navy"
+            className="lg:hidden text-gray-900"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >

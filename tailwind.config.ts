@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,13 +64,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				travel: {
-					'navy': '#2C3E50',
-					'gold': '#9A7D0A',
-					'light-gold': '#BFA830',
-					'cream': '#F9F7F1',
-					'light-gray': '#F8F8F8',
-					'medium-gray': '#E5E5E5',
-					'dark-gray': '#4A4A4A',
+					'navy': '#1A202C',
+					'gold': '#D69E2E',
+					'light-gold': '#F6E05E',
+					'cream': '#FFFFF0',
+					'light-gray': '#F7FAFC',
+					'medium-gray': '#E2E8F0',
+					'dark-gray': '#2D3748',
 				}
 			},
 			borderRadius: {
@@ -87,11 +88,11 @@ export default {
 					to: { height: '0' },
 				},
 				'fade-in': {
-					'0%': { opacity: '0' },
-					'100%': { opacity: '1' },
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
 				},
 				'slide-up': {
-					'0%': { transform: 'translateY(30px)', opacity: '0' },
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
 					'100%': { transform: 'translateY(0)', opacity: '1' },
 				},
 				'image-scale': {
@@ -108,12 +109,21 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'hero-pattern': 'linear-gradient(rgba(10, 35, 66, 0.6), rgba(10, 35, 66, 0.3))',
+				'hero-pattern': 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))',
 			},
 			transitionProperty: {
 				'height': 'height',
 				'spacing': 'margin, padding',
-			}
+			},
+			typography: {
+				DEFAULT: {
+					css: {
+						maxWidth: '65ch',
+						color: 'var(--tw-prose-body)',
+						lineHeight: '1.75',
+					},
+				},
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

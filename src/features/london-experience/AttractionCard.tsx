@@ -14,18 +14,18 @@ interface AttractionCardProps {
 
 const AttractionCard: React.FC<AttractionCardProps> = ({ attraction }) => {
   return (
-    <div className="bg-white rounded-md overflow-hidden shadow-sm">
-      <div className="relative">
+    <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md">
+      <div className="relative overflow-hidden">
         <img 
           src={attraction.image} 
           alt={attraction.name} 
-          className="w-full h-44 object-cover"
+          className="w-full h-52 object-cover transition-transform duration-500 hover:scale-105"
         />
       </div>
-      <div className="p-4">
-        <h3 className="font-medium text-base mb-2">{attraction.name}</h3>
-        <p className="text-gray-600 text-sm mb-3">{attraction.description}</p>
-        <Button size="sm" className="w-full bg-travel-navy hover:bg-travel-navy/90 text-white">
+      <div className="p-5">
+        <h3 className="font-medium text-lg mb-2">{attraction.name}</h3>
+        <p className="text-gray-600 text-sm mb-4 line-clamp-3">{attraction.description}</p>
+        <Button size="sm" className="w-full bg-gray-900 hover:bg-gray-800 text-white rounded-md">
           Learn More
         </Button>
       </div>
