@@ -38,9 +38,14 @@ const IntroSection: React.FC = () => {
           </div>
           <div>
             <img 
-              src="/images/london-experience-main.jpg" 
+              src="https://images.unsplash.com/photo-1590059300824-aa0b78d2ff34?auto=format&fit=crop&w=800&q=80" 
               alt="London Experience" 
               className="rounded-lg w-full h-auto"
+              onError={(e) => {
+                // Fallback image if the original fails to load
+                const target = e.target as HTMLImageElement;
+                target.src = "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=800&q=80";
+              }}
             />
           </div>
         </div>

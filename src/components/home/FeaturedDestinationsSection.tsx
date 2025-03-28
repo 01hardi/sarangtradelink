@@ -25,7 +25,7 @@ const FeaturedDestinationsSection: React.FC = () => {
           <FeaturedDestination 
             title="Edinburgh City Tour"
             description="Discover the historic Royal Mile, Edinburgh Castle, and the charming Old Town of Scotland's capital city. Our guided tours bring Edinburgh's rich history and culture to life."
-            imageUrl="https://images.unsplash.com/photo-1572031922880-13a90a979e59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            imageUrl="https://images.unsplash.com/photo-1580746738099-75b3b5a43c55?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
             href="/services/day-trips"
             imagePosition="left"
           />
