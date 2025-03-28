@@ -21,6 +21,11 @@ const CityPassCard: React.FC<CityPassCardProps> = ({ pass }) => {
           src={pass.image} 
           alt={pass.name} 
           className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
+          onError={(e) => {
+            // Fallback image if the original fails to load
+            const target = e.target as HTMLImageElement;
+            target.src = "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80";
+          }}
         />
       </div>
       <div className="p-5">

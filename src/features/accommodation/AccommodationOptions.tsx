@@ -18,7 +18,7 @@ const AccommodationOptions: React.FC = () => {
       title: "Boutique Hotels",
       description: "Stay in charming, character-filled boutique hotels that offer unique experiences and personalized service.",
       features: ["Unique design", "Personalized service", "Local experience", "Intimate atmosphere", "Special amenities"],
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
       icon: <Coffee className="h-6 w-6" />
     },
     {
@@ -53,6 +53,11 @@ const AccommodationOptions: React.FC = () => {
                   src={option.image} 
                   alt={option.title} 
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback image if the original fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.src = "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80";
+                  }}
                 />
               </div>
               <CardHeader className="flex flex-row items-center gap-4">

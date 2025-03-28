@@ -35,6 +35,11 @@ const DayTripCard: React.FC<DayTripCardProps> = ({ trip }) => {
             src={trip.image} 
             alt={trip.name} 
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            onError={(e) => {
+              // Fallback image if the original fails to load
+              const target = e.target as HTMLImageElement;
+              target.src = "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80";
+            }}
           />
           <Badge className={`absolute top-3 right-3 ${getCategoryColor(trip.category)} text-white font-normal`}>
             {trip.category.charAt(0).toUpperCase() + trip.category.slice(1)}
@@ -91,6 +96,11 @@ const DayTripCard: React.FC<DayTripCardProps> = ({ trip }) => {
                 src={trip.image} 
                 alt={trip.name} 
                 className="w-full h-56 object-cover rounded-md"
+                onError={(e) => {
+                  // Fallback image if the original fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.src = "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80";
+                }}
               />
               <div className="mt-4">
                 <p className="font-semibold text-base mb-2">Highlights:</p>

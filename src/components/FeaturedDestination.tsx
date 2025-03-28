@@ -36,6 +36,11 @@ const FeaturedDestination: React.FC<FeaturedDestinationProps> = ({
           src={imageUrl} 
           alt={title}
           className="w-full h-full object-cover image-zoom"
+          onError={(e) => {
+            // Fallback to a placeholder image if the original fails to load
+            const target = e.target as HTMLImageElement;
+            target.src = "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=800&q=80";
+          }}
         />
       </div>
       

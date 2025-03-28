@@ -30,6 +30,11 @@ const TourPackageCard: React.FC<TourPackageCardProps> = ({ tour }) => {
           src={tour.image} 
           alt={tour.title} 
           className="w-full h-full object-cover"
+          onError={(e) => {
+            // Fallback image if the original fails to load
+            const target = e.target as HTMLImageElement;
+            target.src = "https://images.unsplash.com/photo-1588778226089-02b66a38adbe?auto=format&fit=crop&w=800&q=80";
+          }}
         />
         <div className="absolute top-3 right-3">
           <Badge className="bg-travel-gold text-white">Popular</Badge>

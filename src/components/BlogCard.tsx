@@ -36,6 +36,11 @@ const BlogCard: React.FC<BlogCardProps> = ({
           src={imageUrl} 
           alt={title}
           className="w-full h-48 object-cover image-zoom"
+          onError={(e) => {
+            // Fallback to a placeholder image if the original fails to load
+            const target = e.target as HTMLImageElement;
+            target.src = "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80";
+          }}
         />
       </Link>
       

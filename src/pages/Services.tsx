@@ -67,7 +67,7 @@ const Services = () => {
     <Layout>
       {/* Hero Section */}
       <div className="relative bg-travel-navy py-20">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/services-bg.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1520967824495-b529902acfab?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">Our Services</h1>
           <Breadcrumb className="text-white">
@@ -132,9 +132,17 @@ const Services = () => {
                 </div>
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <img 
-                    src={`/images/service-${service.id}.jpg`} 
+                    src={`https://images.unsplash.com/photo-${index === 0 ? '1520967824495-b529902acfab' : 
+                           index === 1 ? '1551269901-5c5e14c25df7' : 
+                           index === 2 ? '1618160702438-9b02ab6515c9' : 
+                           '1513836279014-a89f7a76ae86'}?auto=format&fit=crop&w=800&q=80`} 
                     alt={service.title} 
                     className="rounded-lg shadow-lg w-full h-auto"
+                    onError={(e) => {
+                      // Fallback image if the original fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=800&q=80";
+                    }}
                   />
                 </div>
               </div>

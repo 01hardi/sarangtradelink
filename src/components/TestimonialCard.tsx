@@ -51,6 +51,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
               src={imageUrl} 
               alt={author} 
               className="w-10 h-10 rounded-full object-cover"
+              onError={(e) => {
+                // Fallback to a placeholder image if the original fails to load
+                const target = e.target as HTMLImageElement;
+                target.src = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150";
+              }}
             />
           </div>
         )}

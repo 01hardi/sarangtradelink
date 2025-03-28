@@ -13,6 +13,11 @@ const HeroSection: React.FC = () => {
           src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
           alt="London Cityscape" 
           className="w-full h-full object-cover"
+          onError={(e) => {
+            // Fallback to a placeholder image if the original fails to load
+            const target = e.target as HTMLImageElement;
+            target.src = "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=1920&q=80";
+          }}
         />
       </div>
       
