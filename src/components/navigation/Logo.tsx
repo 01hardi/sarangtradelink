@@ -19,9 +19,9 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
           "text-white": !scrolled && !isOpen,
         }
       )}
-      aria-label="WanderLondon"
+      aria-label="Sarang Tradelink"
     >
-      Wander<span className="text-travel-gold">London</span>
+      Sarang<span className="text-travel-gold">Tradelink</span>
     </Link>
   );
 };

@@ -17,11 +17,11 @@ const Footer = () => {
           <div className="space-y-6">
             <Link to="/" className="inline-block">
               <h2 className="font-playfair text-2xl font-bold">
-                Wander<span className="text-travel-gold">London</span>
+                Sarang<span className="text-travel-gold">Tradelink</span>
               </h2>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
-              WanderLondon specializes in creating unforgettable travel experiences in the UK. 
+              Sarang Tradelink specializes in creating unforgettable travel experiences in the UK. 
               From guided tours to accommodations, we handle every aspect of your journey.
             </p>
             <div className="flex space-x-4">
@@ -125,7 +125,7 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <Mail size={18} className="text-travel-gold mr-3 flex-shrink-0" />
-                <span className="text-gray-300">info@wanderlondon.com</span>
+                <span className="text-gray-300">info@sarangtradelink.com</span>
               </li>
               <li className="flex">
                 <Clock size={18} className="text-travel-gold mr-3 flex-shrink-0" />
@@ -168,7 +168,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} WanderLondon. All rights reserved.
+              &copy; {new Date().getFullYear()} Sarang Tradelink. All rights reserved.
             </p>
             <div className="flex space-x-4 text-sm text-gray-400">
               <Link to="/privacy-policy" className="hover:text-travel-gold transition-colors">
