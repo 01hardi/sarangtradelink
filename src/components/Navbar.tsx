@@ -35,7 +35,7 @@ const Navbar = () => {
     { name: 'About Us', path: '/about' },
     { 
       name: 'Services', 
-      path: '#',
+      path: '/services',
       dropdown: true,
       subLinks: [
         { name: 'London Experience', path: '/services/london-experience' },
@@ -46,6 +46,7 @@ const Navbar = () => {
     },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact Us', path: '/contact' },
+    { name: 'FAQ', path: '/faq' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -57,12 +58,9 @@ const Navbar = () => {
       {/* Main Navigation */}
       <header 
         className={cn(
-          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
+          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 bg-white shadow-sm",
           {
-            "bg-white/95 backdrop-blur-sm shadow-sm": scrolled || isOpen,
-            "bg-transparent": !scrolled && !isOpen,
-            "lg:bg-transparent": !scrolled && !isOpen,
-            "lg:pt-6": !scrolled && !isOpen,
+            "lg:pt-0": true,
           }
         )}
       >
@@ -81,7 +79,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Button
               variant="default"
-              className="bg-gray-900 hover:bg-gray-800 text-white transition-colors duration-300 rounded-md"
+              className="bg-travel-gold hover:bg-travel-navy text-white transition-colors duration-300"
             >
               Book Consultation
             </Button>

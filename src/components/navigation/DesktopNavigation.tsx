@@ -28,10 +28,9 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
             <button 
               onClick={() => setServicesOpen(!servicesOpen)}
               className={cn(
-                "flex items-center space-x-1 font-medium transition-colors duration-300",
+                "flex items-center space-x-1 font-medium text-travel-navy transition-colors duration-300",
                 {
-                  "text-travel-navy": scrolled,
-                  "text-white": !scrolled,
+                  "text-travel-gold": isActive(link.path),
                   "hover:text-travel-gold": true,
                 }
               )}
@@ -43,11 +42,9 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
             <Link 
               to={link.path}
               className={cn(
-                "font-medium transition-colors duration-300",
+                "font-medium text-travel-navy transition-colors duration-300",
                 {
                   "text-travel-gold": isActive(link.path),
-                  "text-travel-navy": scrolled && !isActive(link.path),
-                  "text-white": !scrolled && !isActive(link.path),
                   "hover:text-travel-gold": true,
                 }
               )}
