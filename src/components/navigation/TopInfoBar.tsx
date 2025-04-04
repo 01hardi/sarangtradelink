@@ -9,7 +9,7 @@ const TopInfoBar = () => {
         <div className="flex space-x-6 text-sm items-center">
           <div className="flex items-center space-x-2">
             <Phone size={14} />
-            <span>+44 20 1234 5678</span>
+            <span>+44 7765793462</span>
           </div>
           <div className="flex items-center space-x-2">
             <MapPin size={14} />

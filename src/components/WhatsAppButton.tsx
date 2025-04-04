@@ -5,8 +5,8 @@ import { toast } from 'sonner';
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    // Replace with your actual WhatsApp business number
-    const phoneNumber = '447123456789';
+    // Updated WhatsApp business number
+    const phoneNumber = '447765793462';
     const message = 'Hello! I would like to know more about your travel services.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
