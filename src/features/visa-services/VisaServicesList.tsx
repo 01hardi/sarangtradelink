@@ -52,25 +52,6 @@ const VisaServicesList: React.FC = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        {/* What We Do Section */}
-        <div className="bg-travel-light-gray rounded-lg p-8 mb-12">
-          <SectionHeading 
-            subtitle="About Our Company" 
-            title="What We Do"
-          />
-          <div className="prose max-w-none">
-            <p className="text-lg mb-4">
-              At Sarang Tradelink, we specialize in simplifying your travel experience. As a premier visa and travel service provider in London, we offer comprehensive assistance for travelers seeking to visit the UK, Europe, and beyond.
-            </p>
-            <p className="mb-4">
-              Our team of experienced consultants offers personalized guidance through complex visa application processes, ensuring your documentation is accurate and complete. We understand that every travel journey is unique, which is why we provide tailored solutions to meet your specific needs.
-            </p>
-            <p>
-              With years of expertise in navigating immigration requirements and building strong relationships with embassies and consulates, we turn what can be a stressful process into a smooth, hassle-free experience. Whether you're traveling for tourism, business, education, or family visits, Sarang Tradelink is your trusted partner for all visa and travel services.
-            </p>
-          </div>
-        </div>
-        
         <SectionHeading 
           subtitle="Expert Visa Assistance" 
           title="Our Visa Services"
