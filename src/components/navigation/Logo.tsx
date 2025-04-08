@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
       className="font-playfair text-2xl font-bold text-travel-navy"
       aria-label="Sarang Tradelink"
     >
-      Sarang<span className="text-travel-gold">Trades</span>
+      Sarang<span className="text-travel-gold">Tradelink</span>
     </Link>
   );
 };
