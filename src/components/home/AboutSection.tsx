@@ -1,8 +1,7 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ShieldCheck, UserCheck, Ticket, CreditCard } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ShieldCheck, UserCheck, Ticket, CreditCard } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const AboutSection: React.FC = () => {
   return (
@@ -17,8 +16,11 @@ const AboutSection: React.FC = () => {
               Your Trusted Travel Partner For UK Adventures
             </h2>
             <p className="text-travel-dark-gray mb-6">
-              At Sarang Tradelink, we are passionate about sharing the magic and history of London and the UK with travelers from around the world. 
-              With over 10 years of experience in the travel industry, our team of local experts curates exceptional experiences tailored to your preferences.
+              At Sarang Tradelink, we are passionate about sharing the magic and
+              history of London and the UK with travelers from around the world.
+              With over 10 years of experience in the travel industry, our team
+              of local experts curates exceptional experiences tailored to your
+              preferences.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="flex items-center">
@@ -38,23 +40,24 @@ const AboutSection: React.FC = () => {
                 <span>Secure Payments</span>
               </div>
             </div>
-            <Button 
+            <Button
               asChild
               className="bg-travel-gold hover:bg-travel-navy text-white"
             >
-              <Link to="/about">
-                Learn More About Us
-              </Link>
+              <Link to="/about">Know More About Us</Link>
             </Button>
           </div>
           <div className="order-1 lg:order-2 relative">
-            <img 
-              src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-              alt="London Tour Guide" 
+            <img
+              src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="London Tour Guide"
               className="w-full h-auto rounded-lg shadow-lg object-cover opacity-0 animate-fade-in"
-              style={{ animationDelay: '300ms' }}
+              style={{ animationDelay: "300ms" }}
             />
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block opacity-0 animate-slide-up" style={{ animationDelay: '600ms' }}>
+            <div
+              className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block opacity-0 animate-slide-up"
+              style={{ animationDelay: "600ms" }}
+            >
               <div className="flex items-center">
                 <div className="bg-travel-gold text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center mr-3">
                   10+
