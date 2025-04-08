@@ -1,9 +1,8 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { NavLink } from '@/components/navigation/NavTypes';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { NavLink } from "@/components/navigation/NavTypes";
 
 interface DesktopNavigationProps {
   navLinks: NavLink[];
@@ -18,14 +17,14 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
   isActive,
   scrolled,
   servicesOpen,
-  setServicesOpen
+  setServicesOpen,
 }) => {
   return (
     <nav className="hidden lg:flex items-center space-x-8">
       {navLinks.map((link) => (
         <div key={link.name} className="relative group">
           {link.dropdown ? (
-            <button 
+            <button
               onClick={() => setServicesOpen(!servicesOpen)}
               className={cn(
                 "flex items-center space-x-1 font-medium text-travel-navy",
@@ -39,27 +38,24 @@ const DesktopNavigation: React.FC<DesktopNavigationProps> = ({
               <ChevronDown size={16} />
             </button>
           ) : (
-            <Link 
+            <Link
               to={link.path}
-              className={cn(
-                "font-medium text-travel-navy",
-                {
-                  "text-travel-gold": isActive(link.path),
-                  "hover:text-travel-gold": true,
-                }
-              )}
+              className={cn("font-medium text-travel-navy", {
+                "text-travel-gold": isActive(link.path),
+                "hover:text-travel-gold": true,
+              })}
             >
               {link.name}
             </Link>
           )}
-          
+
           {/* Dropdown Menu */}
           {link.dropdown && (
-            <div 
+            <div
               className={cn(
                 "absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible",
                 {
-                  "opacity-100 visible": servicesOpen
+                  "opacity-100 visible": servicesOpen,
                 }
               )}
             >

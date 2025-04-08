@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 interface LogoProps {
   scrolled: boolean;
@@ -9,12 +8,12 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
   return (
-    <Link 
-      to="/" 
+    <Link
+      to="/"
       className="font-playfair text-2xl font-bold text-travel-navy"
       aria-label="Sarang Tradelink"
     >
-      Sarang<span className="text-travel-gold">Tradelink</span>
+      Sarang<span className="text-travel-gold">Trades</span>
     </Link>
   );
 };
