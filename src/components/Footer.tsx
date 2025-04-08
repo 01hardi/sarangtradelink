@@ -85,7 +85,7 @@ const Footer = () => {
                   className="text-gray-300 hover:text-travel-gold transition-colors flex items-center"
                 >
                   <ArrowRight size={14} className="mr-2" />
-                  <span>What we do</span>
+                  <span>What We Do</span>
                 </Link>
               </li>
               <li>

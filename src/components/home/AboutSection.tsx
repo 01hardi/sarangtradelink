@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { ShieldCheck, UserCheck, Ticket, CreditCard } from "lucide-react";
@@ -44,7 +45,7 @@ const AboutSection: React.FC = () => {
               asChild
               className="bg-travel-gold hover:bg-travel-navy text-white"
             >
-              <Link to="/about">Know More About Us</Link>
+              <Link to="/about">Know More About What We Do</Link>
             </Button>
           </div>
           <div className="order-1 lg:order-2 relative">
