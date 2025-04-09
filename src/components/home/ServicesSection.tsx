@@ -29,7 +29,7 @@ const ServicesSection: React.FC = () => {
               title="Financial Services"
               description="We at Sarang offer seamless money transfer through IMPS/RTGS, door step cash collection, and by FCA regulated third-party applications for students and travelers requiring foreign exchange services."
               icon={<DollarSign size={24} />}
-              href="/services/london-experience"
+              href="/services/financial-services"
               delay={200}
             />
           </div>

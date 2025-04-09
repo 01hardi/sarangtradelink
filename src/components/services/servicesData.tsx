@@ -30,7 +30,7 @@ export const services: ServiceItemType[] = [
     title: "Financial Services",
     description: "We at Sarang offer seamless money transfer through IMPS/RTGS, door step cash collection, and by FCA regulated third-party applications for students and travelers requiring foreign exchange services.",
     icon: <DollarSign className="h-12 w-12 text-travel-gold" />,
-    path: "/services/london-experience",
+    path: "/services/financial-services",
     features: [
       "Seamless money transfers (IMPS/RTGS)",
       "Door step cash collection",

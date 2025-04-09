@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -29,7 +30,7 @@ const Navbar = () => {
       dropdown: true,
       subLinks: [
         { name: 'Travel Services', path: '/services/day-trips' },
-        { name: 'Financial Services', path: '/services/london-experience' },
+        { name: 'Financial Services', path: '/services/financial-services' },
         { name: 'Accommodation & Airbnb', path: '/services/accommodation' },
         { name: 'Visa Services', path: '/services/visa-services' },
         { name: 'Transfer Services', path: '/services/transfer-services' },
