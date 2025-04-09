@@ -11,6 +11,7 @@ import LondonExperience from "./pages/LondonExperience";
 import VisaServices from "./pages/VisaServices";
 import Accommodation from "./pages/Accommodation";
 import DayTrips from "./pages/DayTrips";
+import TransferServices from "./pages/TransferServices";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/services/visa-services" element={<VisaServices />} />
           <Route path="/services/accommodation" element={<Accommodation />} />
           <Route path="/services/day-trips" element={<DayTrips />} />
+          <Route path="/services/transfer-services" element={<TransferServices />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />

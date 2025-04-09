@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Map, Building, Globe, DollarSign } from 'lucide-react';
+import { Map, Building, Globe, DollarSign, Car } from 'lucide-react';
 
 export interface ServiceItemType {
   id: number;
@@ -62,6 +62,20 @@ export const services: ServiceItemType[] = [
       "Innovator founder visa guidance",
       "TIER 2 skilled worker visas",
       "Schengen & USA visitors visas"
+    ]
+  },
+  {
+    id: 5,
+    title: "Transfer Services",
+    description: "Reliable and comfortable transportation from all London airports to your accommodation with professional drivers for convenient travel throughout London and beyond.",
+    icon: <Car className="h-12 w-12 text-travel-gold" />,
+    path: "/services/transfer-services",
+    features: [
+      "Airport transfers",
+      "Private car service",
+      "Group transportation",
+      "Train station transfers",
+      "Executive travel"
     ]
   }
 ];

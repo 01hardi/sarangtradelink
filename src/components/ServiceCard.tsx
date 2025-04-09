@@ -21,6 +21,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   className,
   delay = 0
 }) => {
+  const isHorizontal = className?.includes('flex-row');
+
   return (
     <Link 
       to={href}
@@ -31,8 +33,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       )}
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="flex items-start">
-        <div className="mr-4 p-2 bg-travel-light-gray rounded-md text-travel-navy">
+      <div className={cn("flex", isHorizontal ? "flex-row items-center" : "flex-col")}>
+        <div className={cn(
+          "p-2 bg-travel-light-gray rounded-md text-travel-navy",
+          isHorizontal ? "mr-4 flex-shrink-0" : "mb-4"
+        )}>
           {icon}
         </div>
         <div>
