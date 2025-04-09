@@ -9,6 +9,12 @@ export interface FinancialService {
   icon: React.ReactNode;
 }
 
+// Create icon components as functions to avoid JSX syntax errors in data files
+const createBanknoteIcon = () => <Banknote className="h-10 w-10 text-travel-gold" />;
+const createDollarSignIcon = () => <DollarSign className="h-10 w-10 text-travel-gold" />;
+const createCreditCardIcon = () => <CreditCard className="h-10 w-10 text-travel-gold" />;
+const createPercentIcon = () => <Percent className="h-10 w-10 text-travel-gold" />;
+
 export const financialServices: FinancialService[] = [
   {
     title: "Money Transfer",
@@ -19,7 +25,7 @@ export const financialServices: FinancialService[] = [
       "Low transaction fees",
       "Real-time tracking"
     ],
-    icon: <Banknote className="h-10 w-10 text-travel-gold" />
+    icon: createBanknoteIcon()
   },
   {
     title: "Foreign Exchange",
@@ -30,7 +36,7 @@ export const financialServices: FinancialService[] = [
       "Expert market guidance",
       "No hidden fees"
     ],
-    icon: <DollarSign className="h-10 w-10 text-travel-gold" />
+    icon: createDollarSignIcon()
   },
   {
     title: "Student Services",
@@ -41,7 +47,7 @@ export const financialServices: FinancialService[] = [
       "Educational loan assistance",
       "Documentation support"
     ],
-    icon: <CreditCard className="h-10 w-10 text-travel-gold" />
+    icon: createCreditCardIcon()
   },
   {
     title: "Travel Finance",
@@ -52,7 +58,7 @@ export const financialServices: FinancialService[] = [
       "Travel insurance payment",
       "Hotel & tour payments"
     ],
-    icon: <Percent className="h-10 w-10 text-travel-gold" />
+    icon: createPercentIcon()
   }
 ];
 
