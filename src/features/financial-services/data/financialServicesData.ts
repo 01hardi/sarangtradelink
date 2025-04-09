@@ -9,11 +9,11 @@ export interface FinancialService {
   icon: React.ReactNode;
 }
 
-// Create icon components as functions to avoid JSX syntax errors in data files
-const createBanknoteIcon = () => <Banknote className="h-10 w-10 text-travel-gold" />;
-const createDollarSignIcon = () => <DollarSign className="h-10 w-10 text-travel-gold" />;
-const createCreditCardIcon = () => <CreditCard className="h-10 w-10 text-travel-gold" />;
-const createPercentIcon = () => <Percent className="h-10 w-10 text-travel-gold" />;
+// Create icon generators that will be called when rendering the component
+const createBanknoteIcon = () => React.createElement(Banknote, { className: "h-10 w-10 text-travel-gold" });
+const createDollarSignIcon = () => React.createElement(DollarSign, { className: "h-10 w-10 text-travel-gold" });
+const createCreditCardIcon = () => React.createElement(CreditCard, { className: "h-10 w-10 text-travel-gold" });
+const createPercentIcon = () => React.createElement(Percent, { className: "h-10 w-10 text-travel-gold" });
 
 export const financialServices: FinancialService[] = [
   {
