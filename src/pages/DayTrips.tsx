@@ -9,7 +9,6 @@ import { MapPin, Calendar, Ticket, Plane } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import PopularActivities from '@/features/day-trips/PopularActivities';
 
 const DayTrips: React.FC = () => {
   return (
@@ -129,9 +128,6 @@ const DayTrips: React.FC = () => {
       
       {/* Popular Destinations Section */}
       <TravelDestinations />
-      
-      {/* Popular Activities Section */}
-      <PopularActivities />
       
       {/* Booking Section - Moved Inside Container */}
       <section className="py-12 bg-travel-navy text-white">

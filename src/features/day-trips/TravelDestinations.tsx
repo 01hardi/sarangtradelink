@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardFooter, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -117,11 +118,11 @@ const TravelDestinations: React.FC = () => {
           centered
         />
         
-        {/* All destinations in the same grid with equal size cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mt-8">
+        {/* Medium-sized destination cards in a 4-column grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 mt-8">
           {destinations.map((destination) => (
             <Card key={destination.id} className="overflow-hidden hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
-              <div className="h-28 overflow-hidden">
+              <div className="h-40 overflow-hidden">
                 <img 
                   src={destination.image} 
                   alt={destination.name}
@@ -132,16 +133,16 @@ const TravelDestinations: React.FC = () => {
                   }}
                 />
               </div>
-              <CardContent className="pt-2 px-3 pb-1 flex-grow">
-                <CardTitle className="text-sm font-playfair mb-1">{destination.name}</CardTitle>
-                <div className="flex items-center text-travel-gold mb-1">
-                  <MapPin size={12} className="mr-1" />
+              <CardContent className="pt-3 px-4 pb-2 flex-grow">
+                <CardTitle className="text-base font-playfair mb-2">{destination.name}</CardTitle>
+                <div className="flex items-center text-travel-gold mb-2">
+                  <MapPin size={14} className="mr-1" />
                   <span className="text-xs">{destination.location}</span>
                 </div>
-                <p className="text-gray-600 text-xs line-clamp-2">{destination.description}</p>
+                <p className="text-gray-600 text-sm line-clamp-3">{destination.description}</p>
               </CardContent>
-              <CardFooter className="pt-0 pb-2 px-3">
-                <Button className="w-full bg-travel-navy hover:bg-travel-gold text-white transition-colors text-xs py-1 h-auto">
+              <CardFooter className="pt-0 pb-4 px-4">
+                <Button className="w-full bg-travel-navy hover:bg-travel-gold text-white transition-colors">
                   Explore
                 </Button>
               </CardFooter>
