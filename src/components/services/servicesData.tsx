@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Map, Building, Globe, Car, DollarSign, BarChart } from 'lucide-react';
+import { Map, Building, Globe, DollarSign } from 'lucide-react';
 
 export interface ServiceItemType {
   id: number;
@@ -62,32 +62,6 @@ export const services: ServiceItemType[] = [
       "Innovator founder visa guidance",
       "TIER 2 skilled worker visas",
       "Schengen & USA visitors visas"
-    ]
-  },
-  {
-    id: 5,
-    title: "Forex and Currency",
-    description: "Get competitive exchange rates for your travel needs with our currency conversion services. We offer Pound, Dollar, and INR conversion.",
-    icon: <DollarSign className="h-12 w-12 text-travel-gold" />,
-    path: "/services/london-experience",
-    features: [
-      "Competitive exchange rates",
-      "Multiple currency options (Pound, Dollar, INR)",
-      "Quick and secure transactions",
-      "Travel money advice"
-    ]
-  },
-  {
-    id: 6,
-    title: "Trade",
-    description: "Our import-export services facilitate the movement of seasonal products between markets, helping businesses expand their reach.",
-    icon: <BarChart className="h-12 w-12 text-travel-gold" />,
-    path: "/services/london-experience",
-    features: [
-      "Seasonal product importing",
-      "Export facilitation",
-      "Customs documentation assistance",
-      "Market research and strategy"
     ]
   }
 ];

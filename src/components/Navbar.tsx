@@ -29,10 +29,10 @@ const Navbar = () => {
       path: '/services',
       dropdown: true,
       subLinks: [
-        { name: 'London Experience', path: '/services/london-experience' },
+        { name: 'Travel Services', path: '/services/day-trips' },
+        { name: 'Financial Services', path: '/services/london-experience' },
+        { name: 'Accommodation & Airbnb', path: '/services/accommodation' },
         { name: 'Visa Services', path: '/services/visa-services' },
-        { name: 'Accommodation & Transfers', path: '/services/accommodation' },
-        { name: 'UK Day Trips', path: '/services/day-trips' },
       ]
     },
     { name: 'Blog', path: '/blog' },
