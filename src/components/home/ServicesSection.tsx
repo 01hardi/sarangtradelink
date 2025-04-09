@@ -14,7 +14,7 @@ const ServicesSection: React.FC = () => {
           centered
         />
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
           <ServiceCard 
             title="Travel Services"
             description="Consulting and assisting your travel needs as per budget and nature of journey, navigating you to the best type of accredited tour arrangement as per industry standards who are ATOL/ABTA/IATA registered ®"
