@@ -8,11 +8,11 @@ const ServiceIntro: React.FC = () => {
       <div className="container mx-auto px-4">
         <SectionHeading 
           subtitle="What We Offer" 
-          title="Comprehensive Travel Services for Your London Journey"
+          title="Our Premium Services"
         />
         <div className="max-w-3xl mx-auto text-center mt-6">
           <p className="text-gray-600">
-            At Sarang Tradelink, we provide a complete range of services designed to make your London experience seamless and memorable. From guided tours of iconic landmarks to visa assistance, accommodation booking, and exciting day trips, we've got every aspect of your journey covered.
+            At Sarang Tradelink, we provide a comprehensive range of premium services designed to make your UK experience seamless and memorable. From travel consulting and visa assistance to accommodation management and financial services, we've got every aspect of your journey covered.
           </p>
         </div>
       </div>

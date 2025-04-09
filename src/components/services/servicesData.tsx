@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Map, BookOpen, Building, Car, DollarSign, BarChart } from 'lucide-react';
+import { Map, Building, Globe, Car, DollarSign, BarChart } from 'lucide-react';
 
 export interface ServiceItemType {
   id: number;
@@ -14,54 +14,54 @@ export interface ServiceItemType {
 export const services: ServiceItemType[] = [
   {
     id: 1,
-    title: "City Sightseeing",
-    description: "Discover the best of London with HOHO Bus, Attractions, Merlin Pass, London Pass and more. From the Tower of London to West End shows, we'll help you experience the city like a local.",
+    title: "Travel Services",
+    description: "Consulting and assisting your travel needs as per budget and nature of journey, navigating you to the best type of accredited tour arrangement as per industry standards who are ATOL/ABTA/IATA registered ®",
     icon: <Map className="h-12 w-12 text-travel-gold" />,
-    path: "/services/london-experience",
+    path: "/services/day-trips",
     features: [
-      "Private & group guided tours",
-      "Skip-the-line tickets to major attractions",
-      "Themed tours (royal London, historic sites, etc.)",
-      "West End show bookings & dining packages"
+      "Personalized travel planning",
+      "Accredited tour arrangements (ATOL/ABTA/IATA registered)",
+      "Budget-friendly options",
+      "Complete travel solutions"
     ]
   },
   {
     id: 2,
-    title: "Visa Services",
-    description: "Navigate the visa application process with confidence. We support Schengen, US Visitor, Tier 1, 2, 4 and 5 Worker Visa, and ILR applications.",
-    icon: <BookOpen className="h-12 w-12 text-travel-gold" />,
-    path: "/services/visa-services",
+    title: "Financial Services",
+    description: "We at Sarang offer seamless money transfer through IMPS/RTGS, door step cash collection, and by FCA regulated third-party applications for students and travelers requiring foreign exchange services.",
+    icon: <DollarSign className="h-12 w-12 text-travel-gold" />,
+    path: "/services/london-experience",
     features: [
-      "Application assistance & document review",
-      "Personalized application guidance",
-      "Fast-track processing options",
-      "Post-visa support services"
+      "Seamless money transfers (IMPS/RTGS)",
+      "Door step cash collection",
+      "FCA regulated third-party applications",
+      "Foreign exchange for students and travelers"
     ]
   },
   {
     id: 3,
-    title: "Accommodation & Transfers",
-    description: "Find your perfect stay in London with our accommodation booking service including cheap air BnB deals. We also offer airport pickup & drop off services.",
+    title: "Accommodation & Airbnb",
+    description: "As a market-leading management company, we deliver 75% occupancy through 60% direct bookings for your properties, helping you experience an exponential increase in income beyond traditional booking platforms.",
     icon: <Building className="h-12 w-12 text-travel-gold" />,
     path: "/services/accommodation",
     features: [
-      "Curated hotel selections across all budgets",
-      "Luxury apartment & home rentals",
-      "Airport & train station transfers",
-      "Group transportation solutions"
+      "75% occupancy rates through expert management",
+      "60% direct bookings, increasing profit margins",
+      "Comprehensive property management",
+      "Customer service excellence"
     ]
   },
   {
     id: 4,
-    title: "Day Trips",
-    description: "Extend your London adventure with unforgettable day trips to Windsor, Bath, Oxford, Cotswold Stonehenge and other iconic destinations around the UK.",
-    icon: <Car className="h-12 w-12 text-travel-gold" />,
-    path: "/services/day-trips",
+    title: "Visa Services",
+    description: "We assist with personal visa & immigration matters, from UK entry applications to guidance on innovator founder, TIER 2 skilled worker, self-sponsorship, Schengen & USA visitors visa services.",
+    icon: <Globe className="h-12 w-12 text-travel-gold" />,
+    path: "/services/visa-services",
     features: [
-      "Windsor Castle tours",
-      "Bath & Stonehenge experiences",
-      "Oxford & Cotswolds village tours",
-      "Customizable private day excursions"
+      "UK entry visa applications",
+      "Innovator founder visa guidance",
+      "TIER 2 skilled worker visas",
+      "Schengen & USA visitors visas"
     ]
   },
   {
@@ -69,10 +69,10 @@ export const services: ServiceItemType[] = [
     title: "Forex and Currency",
     description: "Get competitive exchange rates for your travel needs with our currency conversion services. We offer Pound, Dollar, and INR conversion.",
     icon: <DollarSign className="h-12 w-12 text-travel-gold" />,
-    path: "/services/accommodation",
+    path: "/services/london-experience",
     features: [
       "Competitive exchange rates",
-      "Multi-currency options",
+      "Multiple currency options (Pound, Dollar, INR)",
       "Quick and secure transactions",
       "Travel money advice"
     ]
@@ -82,7 +82,7 @@ export const services: ServiceItemType[] = [
     title: "Trade",
     description: "Our import-export services facilitate the movement of seasonal products between markets, helping businesses expand their reach.",
     icon: <BarChart className="h-12 w-12 text-travel-gold" />,
-    path: "/services/accommodation",
+    path: "/services/london-experience",
     features: [
       "Seasonal product importing",
       "Export facilitation",
