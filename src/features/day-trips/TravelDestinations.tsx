@@ -113,7 +113,7 @@ const TravelDestinations: React.FC = () => {
   const otherDestinations = destinations.filter(dest => !dest.featured);
   
   return (
-    <section className="py-16 bg-white">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <SectionHeading 
           title="Popular UK Destinations"
@@ -121,10 +121,11 @@ const TravelDestinations: React.FC = () => {
           centered
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        {/* Featured destinations - now in a grid with more columns and smaller cards */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
           {featuredDestinations.map((destination) => (
             <Card key={destination.id} className="overflow-hidden hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
-              <div className="h-48 overflow-hidden">
+              <div className="h-32 overflow-hidden">
                 <img 
                   src={destination.image} 
                   alt={destination.name}
@@ -136,16 +137,16 @@ const TravelDestinations: React.FC = () => {
                   }}
                 />
               </div>
-              <CardContent className="pt-6 pb-2 flex-grow">
-                <CardTitle className="text-xl font-playfair mb-2">{destination.name}</CardTitle>
-                <div className="flex items-center text-travel-gold mb-3">
-                  <MapPin size={16} className="mr-1" />
-                  <span className="text-sm">{destination.location}</span>
+              <CardContent className="pt-3 pb-2 flex-grow">
+                <CardTitle className="text-base font-playfair mb-1">{destination.name}</CardTitle>
+                <div className="flex items-center text-travel-gold mb-2">
+                  <MapPin size={14} className="mr-1" />
+                  <span className="text-xs">{destination.location}</span>
                 </div>
-                <p className="text-gray-600 text-sm">{destination.description}</p>
+                <p className="text-gray-600 text-xs line-clamp-2">{destination.description}</p>
               </CardContent>
-              <CardFooter>
-                <Button className="w-full bg-travel-navy hover:bg-travel-gold text-white transition-colors">
+              <CardFooter className="pt-0 pb-3">
+                <Button className="w-full bg-travel-navy hover:bg-travel-gold text-white transition-colors text-xs py-1 h-auto">
                   Explore
                 </Button>
               </CardFooter>
@@ -153,11 +154,11 @@ const TravelDestinations: React.FC = () => {
           ))}
         </div>
         
-        <h3 className="text-xl font-bold mt-16 mb-6 text-center">More Amazing Destinations</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <h3 className="text-lg font-bold mt-10 mb-4 text-center">More Amazing Destinations</h3>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
           {otherDestinations.map((destination) => (
             <Link to={`#${destination.id}`} key={destination.id} className="group">
-              <div className="relative h-32 rounded-md overflow-hidden">
+              <div className="relative h-24 rounded-md overflow-hidden">
                 <img 
                   src={destination.image} 
                   alt={destination.name}
@@ -167,8 +168,8 @@ const TravelDestinations: React.FC = () => {
                     target.src = "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=800&q=80";
                   }}
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-2">
-                  <h3 className="text-white font-bold text-center text-sm">
+                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-1">
+                  <h3 className="text-white font-bold text-center text-xs">
                     {destination.name}
                   </h3>
                 </div>
@@ -177,7 +178,7 @@ const TravelDestinations: React.FC = () => {
           ))}
         </div>
         
-        <div className="text-center mt-10">
+        <div className="text-center mt-8">
           <Button 
             asChild
             className="bg-travel-gold hover:bg-travel-navy text-white"
