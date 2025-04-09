@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Card, CardContent, CardFooter, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -133,7 +132,7 @@ const TravelDestinations: React.FC = () => {
                   }}
                 />
               </div>
-              <CardContent className="pt-3 px-4 pb-2 flex-grow">
+              <CardContent className="pt-3 px-4 pb-4 flex-grow">
                 <CardTitle className="text-base font-playfair mb-2">{destination.name}</CardTitle>
                 <div className="flex items-center text-travel-gold mb-2">
                   <MapPin size={14} className="mr-1" />
@@ -141,11 +140,6 @@ const TravelDestinations: React.FC = () => {
                 </div>
                 <p className="text-gray-600 text-sm line-clamp-3">{destination.description}</p>
               </CardContent>
-              <CardFooter className="pt-0 pb-4 px-4">
-                <Button className="w-full bg-travel-navy hover:bg-travel-gold text-white transition-colors">
-                  Explore
-                </Button>
-              </CardFooter>
             </Card>
           ))}
         </div>
