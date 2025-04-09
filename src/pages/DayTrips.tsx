@@ -5,7 +5,7 @@ import DayTripsHero from '@/features/day-trips/DayTripsHero';
 import BookingSection from '@/features/london-experience/BookingSection';
 import TravelDestinations from '@/features/day-trips/TravelDestinations';
 import SectionHeading from '@/components/SectionHeading';
-import { Passport, Map, Calendar, Ticket } from 'lucide-react';
+import { MapPin, Calendar, Ticket, Plane } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -79,7 +79,7 @@ const DayTrips: React.FC = () => {
               <ServiceCard 
                 title="Guided Tours"
                 description="Expert-led tours to the UK's most iconic destinations with skip-the-line access and insider knowledge."
-                icon={<Map size={24} />}
+                icon={<MapPin size={24} />}
                 href="/services/day-trips"
                 delay={100}
               />
@@ -88,7 +88,7 @@ const DayTrips: React.FC = () => {
               <ServiceCard 
                 title="Travel Documentation"
                 description="Assistance with travel permits, international driving licenses, and other essential travel documents."
-                icon={<Passport size={24} />}
+                icon={<Plane size={24} />}
                 href="/services/visa-services"
                 delay={200}
               />
