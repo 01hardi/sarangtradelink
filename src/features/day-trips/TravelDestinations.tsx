@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardFooter, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -109,9 +108,6 @@ const destinations: Destination[] = [
 ];
 
 const TravelDestinations: React.FC = () => {
-  const featuredDestinations = destinations.filter(dest => dest.featured);
-  const otherDestinations = destinations.filter(dest => !dest.featured);
-  
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
@@ -121,60 +117,35 @@ const TravelDestinations: React.FC = () => {
           centered
         />
         
-        {/* Featured destinations - now in a grid with more columns and smaller cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
-          {featuredDestinations.map((destination) => (
+        {/* All destinations in the same grid with equal size cards */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mt-8">
+          {destinations.map((destination) => (
             <Card key={destination.id} className="overflow-hidden hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
-              <div className="h-32 overflow-hidden">
+              <div className="h-28 overflow-hidden">
                 <img 
                   src={destination.image} 
                   alt={destination.name}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   onError={(e) => {
-                    // Fallback image if the original fails to load
                     const target = e.target as HTMLImageElement;
                     target.src = "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=800&q=80";
                   }}
                 />
               </div>
-              <CardContent className="pt-3 pb-2 flex-grow">
-                <CardTitle className="text-base font-playfair mb-1">{destination.name}</CardTitle>
-                <div className="flex items-center text-travel-gold mb-2">
-                  <MapPin size={14} className="mr-1" />
+              <CardContent className="pt-2 px-3 pb-1 flex-grow">
+                <CardTitle className="text-sm font-playfair mb-1">{destination.name}</CardTitle>
+                <div className="flex items-center text-travel-gold mb-1">
+                  <MapPin size={12} className="mr-1" />
                   <span className="text-xs">{destination.location}</span>
                 </div>
                 <p className="text-gray-600 text-xs line-clamp-2">{destination.description}</p>
               </CardContent>
-              <CardFooter className="pt-0 pb-3">
+              <CardFooter className="pt-0 pb-2 px-3">
                 <Button className="w-full bg-travel-navy hover:bg-travel-gold text-white transition-colors text-xs py-1 h-auto">
                   Explore
                 </Button>
               </CardFooter>
             </Card>
-          ))}
-        </div>
-        
-        <h3 className="text-lg font-bold mt-10 mb-4 text-center">More Amazing Destinations</h3>
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          {otherDestinations.map((destination) => (
-            <Link to={`#${destination.id}`} key={destination.id} className="group">
-              <div className="relative h-24 rounded-md overflow-hidden">
-                <img 
-                  src={destination.image} 
-                  alt={destination.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=800&q=80";
-                  }}
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-1">
-                  <h3 className="text-white font-bold text-center text-xs">
-                    {destination.name}
-                  </h3>
-                </div>
-              </div>
-            </Link>
           ))}
         </div>
         
