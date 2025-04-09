@@ -1,18 +1,17 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 import SectionHeading from '@/components/SectionHeading';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Map, BookOpen, Building, Car } from 'lucide-react';
+import { ArrowRight, Map, BookOpen, Building, Car, DollarSign, BarChart } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       id: 1,
-      title: "London Experience & City Top Attractions",
-      description: "Discover the best of London with our guided tours of iconic landmarks, cultural sites, and hidden gems. From the Tower of London to West End shows, we'll help you experience the city like a local.",
+      title: "City Sightseeing",
+      description: "Discover the best of London with HOHO Bus, Attractions, Merlin Pass, London Pass and more. From the Tower of London to West End shows, we'll help you experience the city like a local.",
       icon: <Map className="h-12 w-12 text-travel-gold" />,
       path: "/services/london-experience",
       features: [
@@ -25,7 +24,7 @@ const Services = () => {
     {
       id: 2,
       title: "Visa Services",
-      description: "Navigate the UK visa application process with confidence. Our visa specialists provide expert guidance and support to ensure a smooth application experience for tourists, business travelers, and students.",
+      description: "Navigate the visa application process with confidence. We support Schengen, US Visitor, Tier 1, 2, 4 and 5 Worker Visa, and ILR applications.",
       icon: <BookOpen className="h-12 w-12 text-travel-gold" />,
       path: "/services/visa-services",
       features: [
@@ -38,7 +37,7 @@ const Services = () => {
     {
       id: 3,
       title: "Accommodation & Transfers",
-      description: "Find your perfect stay in London with our accommodation booking service. From luxury hotels to budget-friendly options, we'll secure the best rates and locations to suit your needs.",
+      description: "Find your perfect stay in London with our accommodation booking service including cheap air BnB deals. We also offer airport pickup & drop off services.",
       icon: <Building className="h-12 w-12 text-travel-gold" />,
       path: "/services/accommodation",
       features: [
@@ -50,15 +49,41 @@ const Services = () => {
     },
     {
       id: 4,
-      title: "UK Day Trips & Warner Bros. Studio Tour",
-      description: "Extend your London adventure with unforgettable day trips to iconic destinations around the UK. Explore historic sites, charming villages, and breathtaking natural landscapes.",
+      title: "Day Trips",
+      description: "Extend your London adventure with unforgettable day trips to Windsor, Bath, Oxford, Cotswold Stonehenge and other iconic destinations around the UK.",
       icon: <Car className="h-12 w-12 text-travel-gold" />,
       path: "/services/day-trips",
       features: [
-        "Edinburgh historic royal mile tours",
-        "Oxford & Cambridge university experiences",
-        "Lake District & Cotswolds village tours",
-        "Shakespeare's Stratford & Beatles' Liverpool"
+        "Windsor Castle tours",
+        "Bath & Stonehenge experiences",
+        "Oxford & Cotswolds village tours",
+        "Customizable private day excursions"
+      ]
+    },
+    {
+      id: 5,
+      title: "Forex and Currency",
+      description: "Get competitive exchange rates for your travel needs with our currency conversion services. We offer Pound, Dollar, and INR conversion.",
+      icon: <DollarSign className="h-12 w-12 text-travel-gold" />,
+      path: "/services/accommodation",
+      features: [
+        "Competitive exchange rates",
+        "Multi-currency options",
+        "Quick and secure transactions",
+        "Travel money advice"
+      ]
+    },
+    {
+      id: 6,
+      title: "Trade",
+      description: "Our import-export services facilitate the movement of seasonal products between markets, helping businesses expand their reach.",
+      icon: <BarChart className="h-12 w-12 text-travel-gold" />,
+      path: "/services/accommodation",
+      features: [
+        "Seasonal product importing",
+        "Export facilitation",
+        "Customs documentation assistance",
+        "Market research and strategy"
       ]
     }
   ];
@@ -93,7 +118,7 @@ const Services = () => {
           />
           <div className="max-w-3xl mx-auto text-center mt-6">
             <p className="text-gray-600">
-              At WanderLondon, we provide a complete range of services designed to make your London experience seamless and memorable. From guided tours of iconic landmarks to visa assistance, accommodation booking, and exciting day trips, we've got every aspect of your journey covered.
+              At Sarang Tradelink, we provide a complete range of services designed to make your London experience seamless and memorable. From guided tours of iconic landmarks to visa assistance, accommodation booking, and exciting day trips, we've got every aspect of your journey covered.
             </p>
           </div>
         </div>
@@ -135,7 +160,9 @@ const Services = () => {
                     src={`https://images.unsplash.com/photo-${index === 0 ? '1520967824495-b529902acfab' : 
                            index === 1 ? '1551269901-5c5e14c25df7' : 
                            index === 2 ? '1618160702438-9b02ab6515c9' : 
-                           '1513836279014-a89f7a76ae86'}?auto=format&fit=crop&w=800&q=80`} 
+                           index === 3 ? '1513836279014-a89f7a76ae86' :
+                           index === 4 ? '1580048915913-4f5f6825b5f3' :
+                           '1566994861939-3d507cf1a414'}?auto=format&fit=crop&w=800&q=80`} 
                     alt={service.title} 
                     className="rounded-lg shadow-lg w-full h-auto"
                     onError={(e) => {

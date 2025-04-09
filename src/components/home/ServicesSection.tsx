@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Map, Globe, Building, Car } from 'lucide-react';
+import { Map, Globe, Building, Car, DollarSign, BarChart } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import ServiceCard from '@/components/ServiceCard';
 
@@ -14,34 +14,55 @@ const ServicesSection: React.FC = () => {
           centered
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
           <ServiceCard 
-            title="London Experience"
-            description="Guided tours of iconic London landmarks, skip-the-line tickets, and special access to popular attractions."
+            title="Day Trips"
+            description="Trips for Windsor, Bath, Oxford, Cotswold Stonehenge etc..."
             icon={<Map size={24} />}
-            href="/services/london-experience"
+            href="/services/day-trips"
             delay={100}
           />
           <ServiceCard 
-            title="Visa Services"
-            description="Professional assistance with Schengen and USA visa applications, documentation, and application tracking."
-            icon={<Globe size={24} />}
-            href="/services/visa-services"
+            title="City Sightseeing"
+            description="HOHO Bus, Attractions, Merlin Pass, London Pass etc"
+            icon={<Map size={24} />}
+            href="/services/london-experience"
             delay={200}
           />
           <ServiceCard 
-            title="Accommodation"
-            description="Handpicked hotel recommendations, special rates, and booking assistance for comfortable stays."
-            icon={<Building size={24} />}
-            href="/services/accommodation"
+            title="Visa"
+            description="Schengen, US Visitor, Tier 1, 2, 4 and 5 Worker Visa, ILR"
+            icon={<Globe size={24} />}
+            href="/services/visa-services"
             delay={300}
           />
           <ServiceCard 
-            title="UK Day Trips"
-            description="Unforgettable day excursions to Edinburgh, Oxford, Cambridge, and other picturesque UK destinations."
+            title="Transfers"
+            description="Airport Pickup & Drop Off"
             icon={<Car size={24} />}
-            href="/services/day-trips"
+            href="/services/accommodation"
             delay={400}
+          />
+          <ServiceCard 
+            title="Accommodation"
+            description="Cheap air BnB Deals"
+            icon={<Building size={24} />}
+            href="/services/accommodation"
+            delay={500}
+          />
+          <ServiceCard 
+            title="Forex and Currency"
+            description="Pound, Dollar, and INR Conversion"
+            icon={<DollarSign size={24} />}
+            href="/services/accommodation"
+            delay={600}
+          />
+          <ServiceCard 
+            title="Trade"
+            description="Import - Export of Seasonal Products"
+            icon={<BarChart size={24} />}
+            href="/services/accommodation"
+            delay={700}
           />
         </div>
       </div>
