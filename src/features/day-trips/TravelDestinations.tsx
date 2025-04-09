@@ -94,7 +94,7 @@ const TravelDestinations: React.FC = () => {
               </CardContent>
               <CardFooter>
                 <Button className="w-full bg-travel-navy hover:bg-travel-gold text-white transition-colors">
-                  Explore Tours
+                  Explore
                 </Button>
               </CardFooter>
             </Card>

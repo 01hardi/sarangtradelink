@@ -2,9 +2,9 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import DayTripsHero from '@/features/day-trips/DayTripsHero';
-import DayTripsList from '@/features/day-trips/DayTripsList';
-import TravelDestinations from '@/features/day-trips/TravelDestinations';
 import BookingSection from '@/features/london-experience/BookingSection';
+import TravelDestinations from '@/features/day-trips/TravelDestinations';
+import DayTripsList from '@/features/day-trips/DayTripsList';
 
 const DayTrips: React.FC = () => {
   return (
