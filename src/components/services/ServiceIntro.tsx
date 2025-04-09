@@ -6,13 +6,12 @@ const ServiceIntro: React.FC = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <SectionHeading 
-          subtitle="What We Offer" 
-          title="Our Premium Services"
-        />
-        <div className="max-w-3xl mx-auto text-center mt-6">
-          <p className="text-gray-600">
-            At Sarang Tradelink, we provide a comprehensive range of premium services designed to make your UK experience seamless and memorable. From travel consulting and visa assistance to accommodation management and financial services, we've got every aspect of your journey covered.
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-travel-navy mb-4">
+            Our Premium Services
+          </h2>
+          <p className="max-w-3xl mx-auto text-gray-600">
+            We provide a comprehensive range of travel services to make your UK experience truly memorable.
           </p>
         </div>
       </div>
