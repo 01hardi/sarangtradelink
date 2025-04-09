@@ -1,7 +1,6 @@
-
 import React from 'react';
 import SectionHeading from '@/components/SectionHeading';
-import { Camera, Utensils, Museums, Castle, Ship, Ticket } from 'lucide-react';
+import { Camera, Utensils, Landmark, Castle, Ship, Ticket } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -23,7 +22,7 @@ const activities: Activity[] = [
     id: 2,
     name: "Cultural Experiences",
     description: "Visit world-class museums, art galleries and cultural landmarks with skip-the-line access and guided tours.",
-    icon: <Museums className="h-10 w-10 text-travel-gold" />
+    icon: <Landmark className="h-10 w-10 text-travel-gold" />
   },
   {
     id: 3,
