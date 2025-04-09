@@ -25,13 +25,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <Link 
       to={href}
       className={cn(
-        'group block p-5 bg-white rounded-md hover:shadow-sm transition-all duration-300',
+        'group block p-5 h-full bg-white rounded-md hover:shadow-sm transition-all duration-300',
         className,
         'opacity-0 animate-fade-in',
       )}
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col items-center text-center h-full">
         <div className="p-2 bg-travel-light-gray rounded-md text-travel-navy mb-4">
           {icon}
         </div>
@@ -39,7 +39,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           <h3 className="font-medium text-lg text-travel-navy mb-2">
             {title}
           </h3>
-          <p className="text-travel-dark-gray text-sm mb-3">
+          <p className="text-travel-dark-gray text-sm mb-3 line-clamp-3">
             {description}
           </p>
           <div className="flex items-center justify-center text-sm font-medium text-travel-navy group-hover:text-travel-gold transition-colors duration-300">
