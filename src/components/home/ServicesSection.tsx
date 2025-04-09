@@ -14,14 +14,13 @@ const ServicesSection: React.FC = () => {
           centered
         />
         
-        <div className="flex flex-col gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           <ServiceCard 
             title="Travel Services"
             description="Consulting and assisting your travel needs as per budget and nature of journey, navigating you to the best type of accredited tour arrangement as per industry standards who are ATOL/ABTA/IATA registered ®"
             icon={<Map size={24} />}
             href="/services/day-trips"
             delay={100}
-            className="flex-row"
           />
           <ServiceCard 
             title="Financial Services"
@@ -29,7 +28,6 @@ const ServicesSection: React.FC = () => {
             icon={<DollarSign size={24} />}
             href="/services/london-experience"
             delay={200}
-            className="flex-row"
           />
           <ServiceCard 
             title="Accommodation & Airbnb"
@@ -37,7 +35,6 @@ const ServicesSection: React.FC = () => {
             icon={<Building size={24} />}
             href="/services/accommodation"
             delay={300}
-            className="flex-row"
           />
           <ServiceCard 
             title="Visa Services"
@@ -45,7 +42,6 @@ const ServicesSection: React.FC = () => {
             icon={<Globe size={24} />}
             href="/services/visa-services"
             delay={400}
-            className="flex-row"
           />
           <ServiceCard 
             title="Transfer Services"
@@ -53,7 +49,6 @@ const ServicesSection: React.FC = () => {
             icon={<Car size={24} />}
             href="/services/transfer-services"
             delay={500}
-            className="flex-row"
           />
         </div>
       </div>

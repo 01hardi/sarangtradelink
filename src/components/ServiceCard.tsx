@@ -21,8 +21,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   className,
   delay = 0
 }) => {
-  const isHorizontal = className?.includes('flex-row');
-
   return (
     <Link 
       to={href}
@@ -33,11 +31,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       )}
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className={cn("flex", isHorizontal ? "flex-row items-center" : "flex-col")}>
-        <div className={cn(
-          "p-2 bg-travel-light-gray rounded-md text-travel-navy",
-          isHorizontal ? "mr-4 flex-shrink-0" : "mb-4"
-        )}>
+      <div className="flex flex-col items-center text-center">
+        <div className="p-2 bg-travel-light-gray rounded-md text-travel-navy mb-4">
           {icon}
         </div>
         <div>
@@ -47,7 +42,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           <p className="text-travel-dark-gray text-sm mb-3">
             {description}
           </p>
-          <div className="flex items-center text-sm font-medium text-travel-navy group-hover:text-travel-gold transition-colors duration-300">
+          <div className="flex items-center justify-center text-sm font-medium text-travel-navy group-hover:text-travel-gold transition-colors duration-300">
             <span>Learn More</span>
             <ArrowRight size={16} className="ml-1 transform group-hover:translate-x-1 transition-transform duration-300" />
           </div>
