@@ -17,7 +17,7 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
       <img 
         src="/lovable-uploads/c1a8a20f-d1a5-4b57-b6bd-d6af18fe3aa9.png" 
         alt="Tradelink Logo" 
-        className="h-16 w-auto"  // Enlarged logo size
+        className="h-32 w-auto"  // Doubled logo size from h-16 to h-32
       />
       <span className="text-black">Tradelink</span>
     </Link>
@@ -25,3 +25,4 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
 };
 
 export default Logo;
+
