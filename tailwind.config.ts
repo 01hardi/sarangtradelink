@@ -65,8 +65,8 @@ export default {
 				},
 				travel: {
 					'navy': '#1A202C',
-					'gold': '#D69E2E',
-					'light-gold': '#F6E05E',
+					'bright-blue': '#1EAEDB',
+					'sky-blue': '#33C3F0',
 					'cream': '#FFFFF0',
 					'light-gray': '#F7FAFC',
 					'medium-gray': '#E2E8F0',
