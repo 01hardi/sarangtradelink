@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				travel: {
-					'navy': '#1A202C',
-					'gold': '#D69E2E',
-					'light-gold': '#F6E05E',
-					'cream': '#FFFFF0',
+					'navy': '#1E3A8A', // Darker blue
+					'gold': '#1EAEDB', // Bright blue from logo
+					'light-gold': '#33C3F0', // Sky blue from logo
+					'cream': '#EFF6FF', // Light blue tint
 					'light-gray': '#F7FAFC',
 					'medium-gray': '#E2E8F0',
 					'dark-gray': '#2D3748',
