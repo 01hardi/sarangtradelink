@@ -11,15 +11,14 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
   return (
     <Link
       to="/"
-      className="flex items-center space-x-2 font-playfair text-2xl font-bold"
-      aria-label="Tradelink"
+      className="flex items-center space-x-2"
+      aria-label="Logo"
     >
       <img 
         src="/lovable-uploads/c1a8a20f-d1a5-4b57-b6bd-d6af18fe3aa9.png" 
-        alt="Tradelink Logo" 
-        className="h-48 w-auto"  // Increased from h-32 to h-48 (1.5x larger)
+        alt="Logo" 
+        className="h-48 w-auto"
       />
-      <span className="text-black">Tradelink</span>
     </Link>
   );
 };
