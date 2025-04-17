@@ -66,7 +66,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Button
               variant="default"
-              className="bg-travel-gold hover:bg-travel-light-gold text-white"
+              className="bg-travel-gold hover:bg-travel-navy text-white"
             >
               Make Inquiry
             </Button>
