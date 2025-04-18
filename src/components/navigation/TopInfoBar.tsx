@@ -30,7 +30,7 @@ const TopInfoBar = () => {
 
   return (
     <div 
-      className="hidden lg:block bg-[#1A1F2C] text-gray-300 py-1 cursor-move border-b border-gray-800"
+      className="hidden lg:block bg-travel-navy text-white py-1 cursor-move border-b border-gray-800"
       style={{
         transform: `translate(${position.x}px, ${position.y}px)`,
         position: 'relative',
@@ -42,25 +42,25 @@ const TopInfoBar = () => {
         <div className="flex space-x-6 text-sm items-center">
           <div className="flex items-center space-x-2">
             <Phone size={14} className="text-gray-400" />
-            <span className="hover:text-white transition-colors">+44 7765793462</span>
+            <span className="hover:text-gray-200 transition-colors">+44 7765793462</span>
           </div>
           <div className="flex items-center space-x-2">
             <MapPin size={14} className="text-gray-400" />
-            <span className="hover:text-white transition-colors">123 Westminster, London</span>
+            <span className="hover:text-gray-200 transition-colors">123 Westminster, London</span>
           </div>
           <div className="flex items-center space-x-2">
             <Clock size={14} className="text-gray-400" />
-            <span className="hover:text-white transition-colors">Mon-Fri: 9AM - 6PM</span>
+            <span className="hover:text-gray-200 transition-colors">Mon-Fri: 9AM - 6PM</span>
           </div>
         </div>
         <div className="flex space-x-4">
-          <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition-colors">
+          <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-gray-200 transition-colors">
             <Facebook size={16} />
           </a>
-          <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition-colors">
+          <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-gray-200 transition-colors">
             <Instagram size={16} />
           </a>
-          <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white transition-colors">
+          <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-gray-200 transition-colors">
             <Twitter size={16} />
           </a>
         </div>
