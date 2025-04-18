@@ -6,23 +6,23 @@ const ValueProposition = () => {
   const values = [
     {
       number: 1,
-      title: "Local Expertise",
-      description: "Our guides are passionate Londoners who share authentic insights and hidden gems of the city.",
+      title: "Comprehensive Services",
+      description: "From hotel reservations to bespoke ground services, we offer complete tourism solutions across multiple countries.",
     },
     {
       number: 2,
-      title: "Complete Solutions",
-      description: "From visa assistance to accommodation, we handle all aspects of your UK experience.",
+      title: "Global Presence",
+      description: "With offices in UK, USA, Australia, UAE, & India, we provide seamless destination management services worldwide.",
     },
     {
       number: 3,
-      title: "Tailored Service",
-      description: "Every itinerary is customized to match your interests, schedule, and preferences perfectly.",
+      title: "Direct Contracts",
+      description: "We maintain direct contracts with hotels and ground suppliers, ensuring competitive rates and reliable service.",
     },
     {
       number: 4,
-      title: "24/7 Support",
-      description: "Our dedicated team is always available to assist you throughout your journey in the UK.",
+      title: "Own Fleet",
+      description: "Our own fleet of vehicles ranging from cars to coaches ensures quality transportation services.",
     },
   ];
 
@@ -30,8 +30,8 @@ const ValueProposition = () => {
     <section className="py-16 bg-travel-light-gray">
       <div className="container mx-auto px-4">
         <SectionHeading
-          subtitle="Why Choose Us"
-          title="The WanderLondon Difference"
+          subtitle="Our Services"
+          title="Comprehensive Travel Solutions"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {values.map((value) => (

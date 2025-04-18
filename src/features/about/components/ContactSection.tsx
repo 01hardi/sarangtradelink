@@ -10,7 +10,7 @@ const ContactSection = () => {
         <div className="max-w-3xl mx-auto">
           <SectionHeading
             subtitle="Get in Touch"
-            title="Start Planning Your London Adventure"
+            title="Partner With Us For Global Travel Solutions"
           />
           <div className="mt-8">
             <InquiryForm />

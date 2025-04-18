@@ -5,23 +5,23 @@ import SectionHeading from "@/components/SectionHeading";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Michael Anderson",
-      role: "Managing Director",
+      name: "David Anderson",
+      role: "Global Operations Director",
       image: "/images/team-1.jpg",
     },
     {
-      name: "Sophie Taylor",
-      role: "Head of Operations",
+      name: "Sarah Chen",
+      role: "International Partnerships",
       image: "/images/team-2.jpg",
     },
     {
-      name: "Daniel Lee",
-      role: "Travel Experience Manager",
+      name: "Raj Patel",
+      role: "Regional Director - Asia",
       image: "/images/team-3.jpg",
     },
     {
-      name: "Rachel Martinez",
-      role: "Customer Relations",
+      name: "Emma Thompson",
+      role: "Client Relations Manager",
       image: "/images/team-4.jpg",
     },
   ];

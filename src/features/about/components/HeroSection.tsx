@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 opacity-20 bg-[url('/images/london-bg.jpg')] bg-cover bg-center"></div>
       <div className="container mx-auto px-4 relative z-10">
         <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
-          What We Do
+          About Sarang Tradelink
         </h1>
         <Breadcrumb className="text-white">
           <BreadcrumbList>
@@ -24,7 +24,7 @@ const HeroSection = () => {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>What we do</BreadcrumbPage>
+              <BreadcrumbPage>About Us</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
