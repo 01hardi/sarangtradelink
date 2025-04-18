@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import SectionHeading from '@/components/SectionHeading';
@@ -8,14 +7,26 @@ const TransferServices: React.FC = () => {
   const transferServices = [
     {
       title: "Airport Transfers",
-      description: "Reliable and comfortable transportation from all London airports to your accommodation.",
+      description: "Travel seamlessly to and from London's major airports with Addison Lee. We provide reliable, premium and comfortable transfers to Heathrow, Gatwick, Luton, Stansted, and London City airports.",
       icon: <Car className="h-10 w-10" />,
       features: [
-        "Meet & greet service",
-        "Flight tracking",
-        "24/7 availability",
-        "Fixed prices, no hidden fees",
-        "Child seats available on request"
+        "Professional uniformed drivers",
+        "Flight tracking service",
+        "Meet & greet at airports",
+        "Fixed competitive prices",
+        "24/7 customer support"
+      ]
+    },
+    {
+      title: "Direct Booking Benefits",
+      description: "Booking directly with hosts is a win-win for guests and hosts. It allows guests to sidestep Airbnb fees, potentially saving them hundreds or thousands on vacation rentals.",
+      icon: <Clock className="h-10 w-10" />,
+      features: [
+        "Save on platform fees",
+        "Direct communication with hosts",
+        "Verified and secure locations",
+        "Hassle-free stays",
+        "Flexible booking options"
       ]
     },
     {
