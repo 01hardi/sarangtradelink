@@ -20,7 +20,7 @@ const About = () => {
         <div className="absolute inset-0 opacity-20 bg-[url('/images/london-bg.jpg')] bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
-            About Us
+            What We Do
           </h1>
           <Breadcrumb className="text-white">
             <BreadcrumbList>
@@ -42,60 +42,59 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <SectionHeading
-                subtitle="Our Story"
-                title="We Create Unforgettable Experiences in London"
+                subtitle="About Our Services"
+                title="Crafting Unforgettable London Experiences"
                 className="text-left"
               />
               <p className="text-gray-600 mb-6">
-                Founded in 2010, WanderLondon started with a simple mission: to
-                help visitors experience London like a local. What began as a
-                small tour guide service has grown into a comprehensive travel
-                agency specializing in creating personalized London experiences.
+                At WanderLondon, we specialize in creating tailor-made experiences that showcase the 
+                best of London and the UK. From expertly guided tours to comprehensive travel solutions, 
+                we're here to make your British journey extraordinary.
               </p>
               <p className="text-gray-600 mb-6">
-                Our team of experienced locals knows every corner of this
-                magnificent city, from the iconic landmarks to the hidden gems
-                that don't make it into standard tour guides. We pride ourselves
-                on our attention to detail, personalized service, and commitment
-                to making your London visit truly special.
+                Our dedicated team combines deep local knowledge with personalized service to deliver 
+                experiences that go beyond typical tourist attractions. We handle everything from 
+                accommodation and transport to specialized tours and financial services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <div className="bg-travel-light-gray p-6 rounded-lg flex-1 text-center">
                   <h3 className="text-travel-gold text-4xl font-bold mb-2">
-                    10+
+                    15K+
                   </h3>
                   <p className="text-travel-navy font-medium">
-                    Years of Experience
+                    Happy Travelers
                   </p>
                 </div>
                 <div className="bg-travel-light-gray p-6 rounded-lg flex-1 text-center">
                   <h3 className="text-travel-gold text-4xl font-bold mb-2">
-                    5000+
+                    12+
                   </h3>
                   <p className="text-travel-navy font-medium">
-                    Happy Customers
+                    Years Experience
                   </p>
                 </div>
                 <div className="bg-travel-light-gray p-6 rounded-lg flex-1 text-center">
                   <h3 className="text-travel-gold text-4xl font-bold mb-2">
-                    25+
+                    30+
                   </h3>
-                  <p className="text-travel-navy font-medium">Expert Guides</p>
+                  <p className="text-travel-navy font-medium">
+                    Expert Guides
+                  </p>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
                 src="/images/about-team.jpg"
-                alt="WanderLondon Team"
+                alt="WanderLondon Experience"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
               <div className="absolute -bottom-8 -left-8 bg-travel-gold p-4 rounded-lg hidden md:block">
                 <div className="flex items-center space-x-2 text-white">
                   <MapPin size={24} />
                   <div>
-                    <p className="font-bold">Our Location</p>
-                    <p className="text-sm">123 Westminster, London</p>
+                    <p className="font-bold">Visit Us</p>
+                    <p className="text-sm">Central London Office</p>
                   </div>
                 </div>
               </div>
@@ -109,7 +108,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <SectionHeading
             subtitle="Why Choose Us"
-            title="Our Values & Mission"
+            title="The WanderLondon Difference"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -118,8 +117,8 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Local Expertise</h3>
               <p className="text-gray-600">
-                Our guides are London natives who know the city inside out,
-                sharing authentic insights and stories.
+                Our guides are passionate Londoners who share authentic insights and 
+                hidden gems of the city.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -127,21 +126,21 @@ const About = () => {
                 <span className="text-3xl text-travel-gold">2</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">
-                Personalized Service
+                Complete Solutions
               </h3>
               <p className="text-gray-600">
-                We tailor each experience to your preferences, ensuring you get
-                exactly what you want from your visit.
+                From visa assistance to accommodation, we handle all aspects of your 
+                UK experience.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="w-16 h-16 bg-travel-gold/10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-3xl text-travel-gold">3</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Cultural Immersion</h3>
+              <h3 className="text-xl font-semibold mb-2">Tailored Service</h3>
               <p className="text-gray-600">
-                We believe in experiences that connect you with local culture,
-                not just ticking off tourist attractions.
+                Every itinerary is customized to match your interests, schedule, and 
+                preferences perfectly.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -149,11 +148,11 @@ const About = () => {
                 <span className="text-3xl text-travel-gold">4</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">
-                Sustainable Tourism
+                24/7 Support
               </h3>
               <p className="text-gray-600">
-                We're committed to responsible travel practices that respect
-                London's heritage and environment.
+                Our dedicated team is always available to assist you throughout your 
+                journey in the UK.
               </p>
             </div>
           </div>
@@ -164,8 +163,8 @@ const About = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <SectionHeading
-            subtitle="Meet Our Experts"
-            title="Our Dedicated Team"
+            subtitle="Our Team"
+            title="Meet Our Travel Experts"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             <div className="text-center">
@@ -225,8 +224,8 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">Emma Thompson</h3>
-              <p className="text-travel-gold">Founder & CEO</p>
+              <h3 className="text-xl font-semibold">Michael Anderson</h3>
+              <p className="text-travel-gold">Managing Director</p>
             </div>
             <div className="text-center">
               <div className="relative mb-4 overflow-hidden rounded-lg group">
@@ -285,7 +284,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">James Wilson</h3>
+              <h3 className="text-xl font-semibold">Sophie Taylor</h3>
               <p className="text-travel-gold">Head of Operations</p>
             </div>
             <div className="text-center">
@@ -345,8 +344,8 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">Sarah Chen</h3>
-              <p className="text-travel-gold">Marketing Director</p>
+              <h3 className="text-xl font-semibold">Daniel Lee</h3>
+              <p className="text-travel-gold">Travel Experience Manager</p>
             </div>
             <div className="text-center">
               <div className="relative mb-4 overflow-hidden rounded-lg group">
@@ -405,8 +404,8 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">David Patel</h3>
-              <p className="text-travel-gold">Lead Tour Guide</p>
+              <h3 className="text-xl font-semibold">Rachel Martinez</h3>
+              <p className="text-travel-gold">Customer Relations</p>
             </div>
           </div>
         </div>
@@ -417,8 +416,8 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <SectionHeading
-              subtitle="Get In Touch"
-              title="Have Questions? Contact Us"
+              subtitle="Get in Touch"
+              title="Start Planning Your London Adventure"
             />
             <div className="mt-8">
               <InquiryForm />
