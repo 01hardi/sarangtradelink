@@ -33,9 +33,9 @@ const CompanyOverview = () => {
           </div>
           <div className="relative">
             <img
-              src="/images/about-team.jpg"
-              alt="Sarang Tradelink Global Operations"
-              className="rounded-lg shadow-lg w-full h-auto"
+              src="/images/office-team-meeting.jpg"
+              alt="Sarang Tradelink Global Operations Team"
+              className="rounded-lg shadow-lg w-full h-auto object-cover"
             />
             <div className="absolute -bottom-8 -left-8 bg-travel-gold p-4 rounded-lg hidden md:block">
               <div className="flex items-center space-x-2 text-white">
