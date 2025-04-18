@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import SectionHeading from '@/components/SectionHeading';
@@ -15,18 +16,6 @@ const TransferServices: React.FC = () => {
         "Meet & greet at airports",
         "Fixed competitive prices",
         "24/7 customer support"
-      ]
-    },
-    {
-      title: "Direct Booking Benefits",
-      description: "Booking directly with hosts is a win-win for guests and hosts. It allows guests to sidestep Airbnb fees, potentially saving them hundreds or thousands on vacation rentals.",
-      icon: <Clock className="h-10 w-10" />,
-      features: [
-        "Save on platform fees",
-        "Direct communication with hosts",
-        "Verified and secure locations",
-        "Hassle-free stays",
-        "Flexible booking options"
       ]
     },
     {
