@@ -3,7 +3,6 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import AccommodationHero from '@/features/accommodation/AccommodationHero';
 import AccommodationOptions from '@/features/accommodation/AccommodationOptions';
-import TransferServices from '@/features/accommodation/TransferServices';
 import BookingSection from '@/features/london-experience/BookingSection';
 
 const Accommodation: React.FC = () => {
@@ -11,8 +10,10 @@ const Accommodation: React.FC = () => {
     <Layout>
       <AccommodationHero />
       <AccommodationOptions />
-      <TransferServices />
-      <BookingSection title="Book Your Stay & Transfers" subtitle="Get in Touch" />
+      <BookingSection 
+        title="Ready to Book Your Stay?" 
+        subtitle="Contact us to find the perfect accommodation for your needs and budget" 
+      />
     </Layout>
   );
 };
