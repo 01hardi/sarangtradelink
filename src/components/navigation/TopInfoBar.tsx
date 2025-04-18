@@ -30,7 +30,7 @@ const TopInfoBar = () => {
 
   return (
     <div 
-      className="hidden lg:block bg-travel-navy text-white py-1 cursor-move border-b border-gray-800"
+      className="hidden lg:block bg-travel-navy text-white py-0.5 cursor-move border-b border-gray-800"
       style={{
         transform: `translate(${position.x}px, ${position.y}px)`,
         position: 'relative',
@@ -38,30 +38,30 @@ const TopInfoBar = () => {
       }}
       onMouseDown={handleMouseDown}
     >
-      <div className="container mx-auto flex justify-between items-center px-4">
-        <div className="flex space-x-6 text-sm items-center">
-          <div className="flex items-center space-x-2">
-            <Phone size={14} className="text-gray-400" />
+      <div className="container mx-auto flex justify-between items-center px-2">
+        <div className="flex space-x-4 text-xs items-center">
+          <div className="flex items-center space-x-1">
+            <Phone size={12} className="text-gray-400" />
             <span className="hover:text-gray-200 transition-colors">+44 7765793462</span>
           </div>
-          <div className="flex items-center space-x-2">
-            <MapPin size={14} className="text-gray-400" />
+          <div className="flex items-center space-x-1">
+            <MapPin size={12} className="text-gray-400" />
             <span className="hover:text-gray-200 transition-colors">123 Westminster, London</span>
           </div>
-          <div className="flex items-center space-x-2">
-            <Clock size={14} className="text-gray-400" />
+          <div className="flex items-center space-x-1">
+            <Clock size={12} className="text-gray-400" />
             <span className="hover:text-gray-200 transition-colors">Mon-Fri: 9AM - 6PM</span>
           </div>
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-3">
           <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-gray-200 transition-colors">
-            <Facebook size={16} />
+            <Facebook size={14} />
           </a>
           <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-gray-200 transition-colors">
-            <Instagram size={16} />
+            <Instagram size={14} />
           </a>
           <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-gray-200 transition-colors">
-            <Twitter size={16} />
+            <Twitter size={14} />
           </a>
         </div>
       </div>
