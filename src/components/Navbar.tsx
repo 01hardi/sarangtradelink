@@ -51,7 +51,7 @@ const Navbar = () => {
       <header 
         className="fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-sm"
       >
-        <div className="container mx-auto flex justify-between items-center py-2 px-6">
+        <div className="container mx-auto flex justify-between items-center py-1 px-4">
           <Logo scrolled={scrolled} isOpen={isOpen} />
           
           <DesktopNavigation 
@@ -92,7 +92,7 @@ const Navbar = () => {
       </header>
       
       {/* Spacer for fixed header */}
-      <div className="h-16 lg:h-28"></div>
+      <div className="h-12 lg:h-20"></div>
     </>
   );
 };
