@@ -8,21 +8,18 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 const vehicles = [
   {
     name: "London Black Cab",
-    image: "/lovable-uploads/cb84de26-af43-4379-b38b-81e42bafd24e.png", // Classic London black cab
     passengers: 5,
     luggage: 3,
     isElectric: false
   },
   {
     name: "Executive Saloon",
-    image: "/lovable-uploads/c1a8a20f-d1a5-4b57-b6bd-d6af18fe3aa9.png", // Sleek executive vehicle
     passengers: 4,
     luggage: 2,
     isElectric: true
   },
   {
     name: "Luxury MPV",
-    image: "/images/uk-luxury-mpv.jpg", // Spacious multi-passenger vehicle
     passengers: 6,
     luggage: 4,
     isElectric: false
@@ -45,19 +42,6 @@ const VehicleSelector: React.FC = () => {
             {vehicles.map((vehicle, index) => (
               <Card key={index} className="hover:border-travel-gold transition-colors cursor-pointer">
                 <CardContent className="flex items-center p-6">
-                  <div className="w-48 h-32 relative mr-6">
-                    <img
-                      src={vehicle.image}
-                      alt={`${vehicle.name} vehicle`}
-                      className="w-full h-full object-contain"
-                    />
-                    {vehicle.isElectric && (
-                      <span className="absolute top-0 left-0 bg-green-500 text-white text-xs px-2 py-1 rounded">
-                        ELECTRIC
-                      </span>
-                    )}
-                  </div>
-                  
                   <div className="flex-1">
                     <div className="flex items-center mb-2">
                       <h3 className="text-xl font-semibold mr-2">{vehicle.name}</h3>
@@ -82,6 +66,11 @@ const VehicleSelector: React.FC = () => {
                         <Briefcase size={20} className="text-gray-400 mr-2" />
                         <span>{vehicle.luggage}</span>
                       </div>
+                      {vehicle.isElectric && (
+                        <div className="bg-green-500 text-white text-xs px-2 py-1 rounded">
+                          ELECTRIC
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
