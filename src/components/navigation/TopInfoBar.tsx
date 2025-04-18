@@ -1,10 +1,43 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Phone, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
 
 const TopInfoBar = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true);
+    const startX = e.clientX - position.x;
+    const startY = e.clientY - position.y;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      setPosition({
+        x: e.clientX - startX,
+        y: e.clientY - startY
+      });
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+  };
+
   return (
-    <div className="hidden lg:block bg-travel-navy text-white py-2">
+    <div 
+      className="hidden lg:block bg-travel-navy text-white py-2 cursor-move"
+      style={{
+        transform: `translate(${position.x}px, ${position.y}px)`,
+        position: 'relative',
+        zIndex: isDragging ? 51 : 50,
+      }}
+      onMouseDown={handleMouseDown}
+    >
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex space-x-6 text-sm items-center">
           <div className="flex items-center space-x-2">
