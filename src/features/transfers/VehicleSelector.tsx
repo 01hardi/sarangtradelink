@@ -8,21 +8,21 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 const vehicles = [
   {
     name: "London Black Cab",
-    image: "/lovable-uploads/cb84de26-af43-4379-b38b-81e42bafd24e.png", // Using the existing black taxi image
+    image: "/lovable-uploads/cb84de26-af43-4379-b38b-81e42bafd24e.png", // Classic London black cab
     passengers: 5,
     luggage: 3,
     isElectric: false
   },
   {
     name: "Executive Saloon",
-    image: "/lovable-uploads/c1a8a20f-d1a5-4b57-b6bd-d6af18fe3aa9.png", // Using another existing vehicle image
+    image: "/lovable-uploads/c1a8a20f-d1a5-4b57-b6bd-d6af18fe3aa9.png", // Sleek executive vehicle
     passengers: 4,
     luggage: 2,
     isElectric: true
   },
   {
     name: "Luxury MPV",
-    image: "/images/uk-taxi-mpv.jpg", // Placeholder for a new UK taxi MPV image
+    image: "/images/uk-luxury-mpv.jpg", // Spacious multi-passenger vehicle
     passengers: 6,
     luggage: 4,
     isElectric: false
