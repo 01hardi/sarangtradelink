@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { UseFormReturn } from 'react-hook-form';
 import { 
@@ -91,19 +90,11 @@ export const ContactInfoFields: React.FC<FormFieldsProps> = ({ form }) => {
                 </SelectTrigger>
               </FormControl>
               <SelectContent>
-                <SelectItem value="london-experience">London Experience</SelectItem>
+                <SelectItem value="travel-services">Travel Services</SelectItem>
+                <SelectItem value="financial-services">Financial Services</SelectItem>
+                <SelectItem value="accommodation-airbnb">Accommodation & Airbnb</SelectItem>
                 <SelectItem value="visa-services">Visa Services</SelectItem>
-                <SelectItem value="accommodation">Accommodation & Transfers</SelectItem>
-                <SelectItem value="edinburgh">Edinburgh City Tour</SelectItem>
-                <SelectItem value="york">Historic York</SelectItem>
-                <SelectItem value="cambridge">Cambridge University Tour</SelectItem>
-                <SelectItem value="oxford">Oxford Day Trip</SelectItem>
-                <SelectItem value="lake-district">Lake District Nature Tour</SelectItem>
-                <SelectItem value="cotswolds">Cotswolds Village Experience</SelectItem>
-                <SelectItem value="liverpool">Beatles Liverpool Tour</SelectItem>
-                <SelectItem value="stratford">Shakespeare's Stratford-upon-Avon</SelectItem>
-                <SelectItem value="harry-potter">Warner Bros. Harry Potter Studio</SelectItem>
-                <SelectItem value="other">Other Destinations</SelectItem>
+                <SelectItem value="transfer-services">Transfer Services</SelectItem>
               </SelectContent>
             </Select>
             <FormMessage />
