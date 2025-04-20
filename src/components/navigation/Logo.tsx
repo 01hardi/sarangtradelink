@@ -7,19 +7,17 @@ interface LogoProps {
   isOpen: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
+const Logo: React.FC<LogoProps> = () => {
   return (
     <Link
       to="/"
-      className="flex items-center space-x-2"
+      className="flex items-center justify-center"
       aria-label="Logo"
     >
       <div
-        className="bg-transparent rounded"
+        className="bg-transparent rounded flex items-center"
         style={{
           lineHeight: 0,
-          display: "flex",
-          alignItems: "center",
         }}
       >
         <img

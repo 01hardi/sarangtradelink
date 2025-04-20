@@ -1,40 +1,23 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-// Removed import of TopInfoBar
-import MobileMenu from '@/components/navigation/MobileMenu';
-import DesktopNavigation from '@/components/navigation/DesktopNavigation';
+import { Drawer, DrawerContent } from '@/components/ui/drawer';
 import Logo from '@/components/navigation/Logo';
+import MobileMenu from '@/components/navigation/MobileMenu';
 import { NavLink } from '@/components/navigation/NavTypes';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    setIsOpen(false);
-    setServicesOpen(false);
-  }, [location.pathname]);
-
-  // Listen to scroll event for motion effect and transparency
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks: NavLink[] = [
     { name: 'Home', path: '/' },
     { name: 'What We Do', path: '/about' },
-    { 
-      name: 'Services', 
+    {
+      name: 'Services',
       path: '/services',
       dropdown: true,
       subLinks: [
@@ -43,7 +26,7 @@ const Navbar = () => {
         { name: 'Accommodation & Airbnb', path: '/services/accommodation' },
         { name: 'Visa Services', path: '/services/visa-services' },
         { name: 'Transfer Services', path: '/services/transfer-services' },
-      ]
+      ],
     },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact Us', path: '/contact' },
@@ -54,63 +37,63 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Removed TopInfoBar */}
-
-      {/* Main Navigation */}
-      <header 
+      <header
         className={cn(
-          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 ease-in-out",
-          scrolled ? "backdrop-blur-md bg-white/10 shadow-md" : "bg-transparent shadow-none"
+          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 ease-in-out bg-white/90 shadow-md backdrop-blur"
         )}
       >
         <div
-          className={cn(
-            "container mx-auto flex justify-between items-center py-1 px-4 glass animate-fade-in",
-            "transition-transform duration-300 ease-in-out",
-            scrolled ? "scale-100" : "scale-95"
-          )}
+          className="container mx-auto flex items-center justify-between py-2 px-4"
         >
-          <Logo scrolled={scrolled} isOpen={isOpen} />
-          
-          <DesktopNavigation 
-            navLinks={navLinks} 
-            isActive={isActive} 
-            scrolled={scrolled} 
-            servicesOpen={servicesOpen}
-            setServicesOpen={setServicesOpen}
-          />
-          
-          {/* Book Now Button */}
-          <div className="hidden lg:block">
-            <Button
-              variant="default"
-              className="bg-travel-bright-blue hover:bg-travel-sky-blue text-white"
+          <div className="flex-1 flex justify-start">
+            {/* Burger menu always visible */}
+            <button
+              className="text-gray-900"
+              onClick={() => setIsOpen(true)}
+              aria-label="Open menu"
             >
-              Make Inquiry
-            </Button>
+              <Menu size={28} />
+            </button>
           </div>
           
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-gray-900"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="flex-1 flex justify-center">
+            <Logo scrolled={false} isOpen={isOpen} />
+          </div>
+          
+          <div className="flex-1 flex justify-end">
+            {/* Nothing on far right for now, balance */}
+          </div>
         </div>
-        
-        <MobileMenu 
-          isOpen={isOpen}
-          servicesOpen={servicesOpen}
-          setServicesOpen={setServicesOpen}
-          navLinks={navLinks}
-          isActive={isActive}
-        />
+
+        {/* Drawer for menu */}
+        <Drawer open={isOpen} onOpenChange={setIsOpen}>
+          <DrawerContent className="max-w-md w-full mx-auto">
+            <div className="flex justify-between items-center px-4 pt-2">
+              <Logo scrolled={false} isOpen={isOpen} />
+              <button
+                className="text-gray-900"
+                onClick={() => setIsOpen(false)}
+                aria-label="Close menu"
+              >
+                <X size={28} />
+              </button>
+            </div>
+            <div className="mt-4">
+              <MobileMenu
+                isOpen={isOpen}
+                navLinks={navLinks}
+                isActive={isActive}
+                servicesOpen={false}
+                setServicesOpen={()=>{}}
+                inDrawer={true}
+                closeDrawer={() => setIsOpen(false)}
+              />
+            </div>
+          </DrawerContent>
+        </Drawer>
       </header>
-      
       {/* Spacer for fixed header */}
-      <div className="h-12 lg:h-20"></div>
+      <div className="h-20"></div>
     </>
   );
 };
