@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Menu, X, contact } from 'lucide-react';
+import { Menu, X, Contact } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Drawer, DrawerContent } from '@/components/ui/drawer';
@@ -71,7 +71,7 @@ const Navbar = () => {
               className="bg-travel-gold hover:bg-travel-navy text-white px-4 py-2 rounded transition-colors flex gap-2 items-center"
               onClick={() => setShowContact(true)}
             >
-              <contact size={18} className="mr-1" />
+              <Contact size={18} className="mr-1" />
               Contact Us
             </Button>
           </div>
