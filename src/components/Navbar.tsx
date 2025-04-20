@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X, Contact } from 'lucide-react';
@@ -9,7 +8,6 @@ import Logo from '@/components/navigation/Logo';
 import MobileMenu from '@/components/navigation/MobileMenu';
 import { NavLink } from '@/components/navigation/NavTypes';
 import InquiryForm from '@/components/InquiryForm';
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showContact, setShowContact] = useState(false);
@@ -47,9 +45,7 @@ const Navbar = () => {
     name: 'FAQ',
     path: '/faq'
   }];
-
   const isActive = (path: string) => location.pathname === path;
-
   return <>
       <header className={cn("fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 ease-in-out bg-transparent shadow-none backdrop-blur-none")}>
         <div className="container mx-auto flex items-center justify-between px-4 py-[2px]">
@@ -66,11 +62,7 @@ const Navbar = () => {
           
           <div className="flex-1 flex justify-end">
             {/* Contact Us button */}
-            <Button 
-              variant="default" 
-              className="bg-travel-gold hover:bg-travel-navy text-white px-4 py-2 rounded transition-colors flex gap-2 items-center"
-              onClick={() => setShowContact(true)}
-            >
+            <Button variant="default" onClick={() => setShowContact(true)} className="bg-travel-gold py-2 rounded transition-colors flex gap-2 items-center bg-sky-500 hover:bg-sky-400 text-slate-950 px-[24px]">
               <Contact size={18} className="mr-1" />
               Contact Us
             </Button>
@@ -111,5 +103,4 @@ const Navbar = () => {
       <div className="h-20"></div>
     </>;
 };
-
 export default Navbar;
