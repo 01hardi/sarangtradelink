@@ -1,20 +1,37 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Logo: React.FC = () => {
+interface LogoProps {
+  scrolled: boolean;
+  isOpen: boolean;
+}
+
+const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
   return (
-    <div
+    <Link
+      to="/"
+      className="flex items-center space-x-2"
       aria-label="Logo"
-      className="flex items-center justify-center h-12 md:h-16"
-      style={{ lineHeight: 0 }}
     >
-      <img
-        src="/lovable-uploads/cb28afbe-20b6-4ebc-826b-a2587f840738.png"
-        alt="TTC Logo"
-        className="h-8 md:h-10 w-auto"
-        style={{ background: "transparent" }}
-      />
-    </div>
+      <div
+        className="bg-transparent rounded"
+        style={{
+          lineHeight: 0,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <img
+          src="/lovable-uploads/0f2d455a-d21b-4947-8ca0-dd65f1adf8fd.png"
+          alt="Sarang Logo"
+          className="h-16 md:h-20 w-auto"
+          style={{
+            background: "transparent",
+          }}
+        />
+      </div>
+    </Link>
   );
 };
 
