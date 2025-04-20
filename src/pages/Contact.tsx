@@ -49,7 +49,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Our Office</h3>
-                    <p className="text-gray-600">123 Westminster, London, UK SW1A 1AA</p>
+                    <p className="text-gray-600">22 Wheelers Lane, Bradville, Milton Keynes, England, MK137HW</p>
                   </div>
                 </div>
                 
@@ -120,3 +120,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

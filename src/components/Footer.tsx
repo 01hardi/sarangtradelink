@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -157,7 +158,7 @@ const Footer = () => {
                   className="text-travel-gold mr-3 flex-shrink-0 mt-1"
                 />
                 <span className="text-gray-300">
-                  123 Westminster, London, UK SW1A 1AA
+                  22 Wheelers Lane, Bradville, Milton Keynes, England, MK137HW
                 </span>
               </li>
               <li className="flex">
@@ -250,3 +251,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
