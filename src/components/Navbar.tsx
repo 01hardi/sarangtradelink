@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X, Contact } from 'lucide-react';
@@ -62,9 +63,29 @@ const Navbar = () => {
           
           <div className="flex-1 flex justify-end">
             {/* Contact Us button */}
-            <Button variant="default" onClick={() => setShowContact(true)} className="bg-travel-gold rounded transition-colors flex gap-2 items-center text-slate-950 px-px mx-0 my-0 py-0 text-center bg-sky-500 hover:bg-sky-400">
-              <Contact size={18} className="mr-1" />
-              Contact Us
+            <Button
+              variant="default"
+              onClick={() => setShowContact(true)}
+              className={cn(
+                // Background color from your design tokens
+                "bg-travel-gold",
+                // Responsive padding and font
+                "rounded-lg transition-colors flex gap-2 items-center font-semibold text-travel-navy px-4 py-2 md:px-6 md:py-2",
+                // Text color and hover
+                "text-travel-navy hover:bg-[#f2e368]",
+                // Responsive width for mobile
+                "w-auto min-w-[120px] justify-center",
+                // Slight shadow on hover
+                "hover:shadow-md",
+                // Remove extra reset padding/margin
+                "m-0"
+              )}
+              style={{ boxShadow: "0 2px 4px rgba(26,32,44,0.04)" }}
+              aria-label="Contact us"
+            >
+              <Contact size={20} className="mr-2" />
+              <span className="hidden sm:inline">Contact Us</span>
+              <span className="inline sm:hidden">Contact</span>
             </Button>
           </div>
         </div>
@@ -99,7 +120,6 @@ const Navbar = () => {
           </DrawerContent>
         </Drawer>
       </header>
-      {/* Spacer for fixed header */}
       <div className="h-20"></div>
     </>;
 };
