@@ -62,7 +62,7 @@ const Navbar = () => {
           
           <div className="flex-1 flex justify-end">
             {/* Contact Us button */}
-            <Button variant="default" onClick={() => setShowContact(true)} className="bg-travel-gold py-2 rounded transition-colors flex gap-2 items-center bg-sky-500 hover:bg-sky-400 text-slate-950 px-[24px]">
+            <Button variant="default" onClick={() => setShowContact(true)} className="bg-travel-gold rounded transition-colors flex gap-2 items-center text-slate-950 px-px mx-0 my-0 py-0 text-center bg-sky-500 hover:bg-sky-400">
               <Contact size={18} className="mr-1" />
               Contact Us
             </Button>
