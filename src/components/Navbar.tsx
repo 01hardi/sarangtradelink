@@ -49,9 +49,11 @@ const Navbar = () => {
       
       {/* Main Navigation */}
       <header 
-        className="fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-sm"
+        className="fixed top-0 left-0 right-0 w-full z-50"
       >
-        <div className="container mx-auto flex justify-between items-center py-1 px-4">
+        <div
+          className="container mx-auto flex justify-between items-center py-1 px-4 glass animate-fade-in bg-transparent"
+        >
           <Logo scrolled={scrolled} isOpen={isOpen} />
           
           <DesktopNavigation 
