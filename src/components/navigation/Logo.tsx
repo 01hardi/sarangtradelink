@@ -15,8 +15,8 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
       aria-label="Logo"
     >
       <img 
-        src="/lovable-uploads/c1a8a20f-d1a5-4b57-b6bd-d6af18fe3aa9.png" 
-        alt="Logo" 
+        src="/lovable-uploads/76ccaa30-053f-491c-9f82-3b68934408e2.png" 
+        alt="Sarang Logo" 
         className="h-48 w-auto"
       />
     </Link>
