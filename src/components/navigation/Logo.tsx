@@ -23,7 +23,7 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
         }}
       >
         <img
-          src="/lovable-uploads/c0c93a05-ab16-4fce-91d8-a38c599f83d2.png"
+          src="/lovable-uploads/0f2d455a-d21b-4947-8ca0-dd65f1adf8fd.png"
           alt="Sarang Logo"
           className="h-16 md:h-20 w-auto"
           style={{
@@ -36,4 +36,3 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
 };
 
 export default Logo;
-

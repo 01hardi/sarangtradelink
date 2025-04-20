@@ -21,6 +21,15 @@ const Navbar = () => {
     setServicesOpen(false);
   }, [location.pathname]);
 
+  // Listen to scroll event for motion effect and transparency
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const navLinks: NavLink[] = [
     { name: 'Home', path: '/' },
     { name: 'What We Do', path: '/about' },
@@ -49,10 +58,17 @@ const Navbar = () => {
       
       {/* Main Navigation */}
       <header 
-        className="fixed top-0 left-0 right-0 w-full z-50"
+        className={cn(
+          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 ease-in-out",
+          scrolled ? "backdrop-blur-md bg-white/10 shadow-md" : "bg-transparent shadow-none"
+        )}
       >
         <div
-          className="container mx-auto flex justify-between items-center py-1 px-4 glass animate-fade-in bg-transparent"
+          className={cn(
+            "container mx-auto flex justify-between items-center py-1 px-4 glass animate-fade-in",
+            "transition-transform duration-300 ease-in-out",
+            scrolled ? "scale-100" : "scale-95"
+          )}
         >
           <Logo scrolled={scrolled} isOpen={isOpen} />
           
