@@ -1,119 +1,61 @@
 
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
-// Removed import of TopInfoBar
-import MobileMenu from '@/components/navigation/MobileMenu';
-import DesktopNavigation from '@/components/navigation/DesktopNavigation';
-import Logo from '@/components/navigation/Logo';
-import { NavLink } from '@/components/navigation/NavTypes';
+import React, { useState, useEffect } from "react";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Logo from "@/components/navigation/Logo";
+import { useLocation, Link } from "react-router-dom";
+
+// No top info bar import or render
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setIsOpen(false);
-    setServicesOpen(false);
   }, [location.pathname]);
-
-  // Listen to scroll event for motion effect and transparency
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const navLinks: NavLink[] = [
-    { name: 'Home', path: '/' },
-    { name: 'What We Do', path: '/about' },
-    { 
-      name: 'Services', 
-      path: '/services',
-      dropdown: true,
-      subLinks: [
-        { name: 'Travel Services', path: '/services/day-trips' },
-        { name: 'Financial Services', path: '/services/financial-services' },
-        { name: 'Accommodation & Airbnb', path: '/services/accommodation' },
-        { name: 'Visa Services', path: '/services/visa-services' },
-        { name: 'Transfer Services', path: '/services/transfer-services' },
-      ]
-    },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contact Us', path: '/contact' },
-    { name: 'FAQ', path: '/faq' },
-  ];
-
-  const isActive = (path: string) => location.pathname === path;
 
   return (
     <>
-      {/* Removed TopInfoBar */}
-
       {/* Main Navigation */}
-      <header 
-        className={cn(
-          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 ease-in-out",
-          scrolled ? "backdrop-blur-md bg-white/10 shadow-md" : "bg-transparent shadow-none"
-        )}
-      >
-        <div
-          className={cn(
-            "container mx-auto flex justify-between items-center py-1 px-4 glass animate-fade-in",
-            "transition-transform duration-300 ease-in-out",
-            scrolled ? "scale-100" : "scale-95"
-          )}
-        >
-          <Logo scrolled={scrolled} isOpen={isOpen} />
-          
-          <DesktopNavigation 
-            navLinks={navLinks} 
-            isActive={isActive} 
-            scrolled={scrolled} 
-            servicesOpen={servicesOpen}
-            setServicesOpen={setServicesOpen}
-          />
-          
-          {/* Book Now Button */}
-          <div className="hidden lg:block">
-            <Button
-              variant="default"
-              className="bg-travel-bright-blue hover:bg-travel-sky-blue text-white"
+      <header className="fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-sm">
+        <div className="container mx-auto px-4 py-2 flex items-center justify-between h-14">
+          {/* Left: Hamburger button labeled "Menu" */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <button
+              className="flex items-center text-travel-navy font-medium gap-1"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              onClick={() => setIsOpen((v) => !v)}
             >
-              Make Inquiry
-            </Button>
+              <Menu size={22} className="mr-1" />
+              <span className="text-base">Menu</span>
+            </button>
           </div>
           
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-gray-900"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Center: Logo */}
+          <div className="flex-1 flex justify-center">
+            <Link to="/" aria-label="Go to home">
+              <Logo />
+            </Link>
+          </div>
+
+          {/* Right: Contact Button */}
+          <div className="flex-1 flex justify-end">
+            <Button
+              asChild
+              className="rounded-lg bg-[#F26430] hover:bg-[#da5123] text-white px-4 py-2 min-w-[100px] font-medium text-base shadow-none"
+              style={{ transition: "background 0.2s" }}
+            >
+              <Link to="/contact">Contact</Link>
+            </Button>
+          </div>
         </div>
-        
-        <MobileMenu 
-          isOpen={isOpen}
-          servicesOpen={servicesOpen}
-          setServicesOpen={setServicesOpen}
-          navLinks={navLinks}
-          isActive={isActive}
-        />
+        {/* You can show/hide a sidebar here for mobile if needed */}
       </header>
-      
       {/* Spacer for fixed header */}
-      <div className="h-12 lg:h-20"></div>
+      <div className="h-14"></div>
     </>
   );
 };
 
 export default Navbar;
-
