@@ -14,13 +14,26 @@ const Logo: React.FC<LogoProps> = ({ scrolled, isOpen }) => {
       className="flex items-center space-x-2"
       aria-label="Logo"
     >
-      <img 
-        src="/lovable-uploads/76ccaa30-053f-491c-9f82-3b68934408e2.png" 
-        alt="Sarang Logo" 
-        className="h-48 w-auto"
-      />
+      <div
+        className="bg-transparent rounded"
+        style={{
+          lineHeight: 0,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <img
+          src="/lovable-uploads/c0c93a05-ab16-4fce-91d8-a38c599f83d2.png"
+          alt="Sarang Logo"
+          className="h-16 md:h-20 w-auto"
+          style={{
+            background: "transparent",
+          }}
+        />
+      </div>
     </Link>
   );
 };
 
 export default Logo;
+
