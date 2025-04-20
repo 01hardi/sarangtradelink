@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import TopInfoBar from '@/components/navigation/TopInfoBar';
+// Removed import of TopInfoBar
 import MobileMenu from '@/components/navigation/MobileMenu';
 import DesktopNavigation from '@/components/navigation/DesktopNavigation';
 import Logo from '@/components/navigation/Logo';
@@ -54,8 +54,8 @@ const Navbar = () => {
 
   return (
     <>
-      <TopInfoBar />
-      
+      {/* Removed TopInfoBar */}
+
       {/* Main Navigation */}
       <header 
         className={cn(
@@ -116,3 +116,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
