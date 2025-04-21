@@ -167,7 +167,7 @@ const FAQ = () => {
                 variant="outline" 
                 className="border-white text-white hover:bg-white hover:text-travel-navy transition-colors"
               >
-                <a href="mailto:info@wanderlondon.com">Email Us</a>
+                <a href="mailto:Sarangtradelink@gmail.com">Email Us</a>
               </Button>
             </div>
           </div>
@@ -178,3 +178,4 @@ const FAQ = () => {
 };
 
 export default FAQ;
+

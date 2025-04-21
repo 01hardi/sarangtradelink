@@ -173,7 +173,7 @@ const Footer = () => {
                   size={18}
                   className="text-travel-gold mr-3 flex-shrink-0"
                 />
-                <span className="text-gray-300">info@sarangtradelink.com</span>
+                <span className="text-gray-300">Sarangtradelink@gmail.com</span>
               </li>
               <li className="flex">
                 <Clock

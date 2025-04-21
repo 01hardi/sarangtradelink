@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
@@ -68,7 +69,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email Address</h3>
-                    <p className="text-gray-600">info@wanderlondon.com</p>
+                    <p className="text-gray-600">Sarangtradelink@gmail.com</p>
                   </div>
                 </div>
                 
@@ -119,3 +120,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
