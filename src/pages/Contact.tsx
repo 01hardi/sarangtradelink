@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
@@ -98,19 +97,19 @@ const Contact = () => {
       {/* Map Section */}
       <section className="py-16 bg-travel-light-gray">
         <div className="container mx-auto px-4">
-          <SectionHeading 
-            subtitle="Find Us" 
+          <SectionHeading
+            subtitle="Find Us"
             title="Our Location"
           />
           <div className="mt-8 rounded-lg overflow-hidden shadow-lg">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5463608598347!2d-0.12982352341697507!3d51.50073301882345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1sen!2sus!4v1621527021012!5m2!1sen!2sus" 
-              width="100%" 
-              height="450" 
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5463608598347!2d-0.72982352341697507!3d51.99873301882345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487484c38c8cd1d9%3A0xb58f2474b9a45aa9!2s22%20Wheelers%20Lane%2C%20Bradville%2C%20Milton%20Keynes%2C%20MK13%207HW!5e0!3m2!1sen!2sus!4v1688819234567!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen={true}
               loading="lazy"
-              title="WanderLondon Office Location"
+              title="Sarang Tradelink Office Location"
             ></iframe>
           </div>
         </div>
@@ -120,4 +119,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
