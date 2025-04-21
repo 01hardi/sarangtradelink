@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X, Contact } from 'lucide-react';
@@ -8,6 +9,7 @@ import Logo from '@/components/navigation/Logo';
 import MobileMenu from '@/components/navigation/MobileMenu';
 import { NavLink } from '@/components/navigation/NavTypes';
 import InquiryForm from '@/components/InquiryForm';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showContact, setShowContact] = useState(false);
@@ -60,10 +62,21 @@ const Navbar = () => {
             <Logo scrolled={false} isOpen={isOpen} />
           </div>
 
-          <div className="flex-1 flex justify-end">
+          <div className="flex-1 flex justify-end items-center space-x-3">
             {/* Contact Us button */}
-            {/* Desktop/Tablets: Full button; Mobile: icon-only button */}
-            
+            {/* Desktop/Tablet: small button with icon + text, hidden on mobile */}
+            <Button
+              variant="default"
+              size="sm"
+              onClick={() => setShowContact(true)}
+              aria-label="Contact us"
+              className="hidden md:flex items-center space-x-2 bg-travel-gold text-travel-navy shadow-sm border-2 border-travel-gold hover:bg-[#f2e368] transition-colors focus:ring-2 focus:ring-travel-navy"
+              style={{ boxShadow: "0 2px 4px rgba(26,32,44,0.08)" }}
+            >
+              <Contact size={18} />
+              <span>Contact Us</span>
+            </Button>
+
             {/* Mobile: icon-only, circular button */}
             <Button variant="default" size="icon" onClick={() => setShowContact(true)} aria-label="Contact us" className={cn("flex md:hidden items-center justify-center rounded-full bg-travel-gold text-travel-navy shadow-sm p-0 w-10 h-10 hover:bg-[#f2e368] border-2 border-travel-gold transition-colors focus:ring-2 focus:ring-travel-navy", "mx-0")} style={{
             boxShadow: "0 2px 4px rgba(26,32,44,0.08)"
