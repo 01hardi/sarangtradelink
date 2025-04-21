@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu, X, Contact } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -13,43 +13,64 @@ import InquiryForm from '@/components/InquiryForm';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [hideNavbar, setHideNavbar] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
-  const navLinks: NavLink[] = [{
-    name: 'Home',
-    path: '/'
-  }, {
-    name: 'What We Do',
-    path: '/about'
-  }, {
-    name: 'Services',
-    path: '/services',
-    dropdown: true,
-    subLinks: [{
-      name: 'Travel Services',
-      path: '/services/day-trips'
-    }, {
-      name: 'Financial Services',
-      path: '/services/financial-services'
-    }, {
-      name: 'Accommodation & Airbnb',
-      path: '/services/accommodation'
-    }, {
-      name: 'Visa Services',
-      path: '/services/visa-services'
-    }, {
-      name: 'Transfer Services',
-      path: '/services/transfer-services'
-    }]
-  }, {
-    name: 'Blog',
-    path: '/blog'
-  }, {
-    name: 'FAQ',
-    path: '/faq'
-  }];
+  const navLinks: NavLink[] = [
+    { name: 'Home', path: '/' },
+    { name: 'What We Do', path: '/about' },
+    { name: 'Services', path: '/services', dropdown: true, subLinks: [
+      { name: 'Travel Services', path: '/services/day-trips' },
+      { name: 'Financial Services', path: '/services/financial-services' },
+      { name: 'Accommodation & Airbnb', path: '/services/accommodation' },
+      { name: 'Visa Services', path: '/services/visa-services' },
+      { name: 'Transfer Services', path: '/services/transfer-services' },
+    ]},
+    { name: 'Blog', path: '/blog' },
+    { name: 'FAQ', path: '/faq' }
+  ];
+  
   const isActive = (path: string) => location.pathname === path;
-  return <>
-      <header className={cn("fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 ease-in-out bg-transparent shadow-none backdrop-blur-none")}>
+
+  // Handle scroll direction to show/hide navbar
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          if (currentScrollY > 80 && currentScrollY > lastScrollY) {
+            // Scroll down, hide
+            setHideNavbar(true);
+          } else if (currentScrollY < lastScrollY || currentScrollY < 50) {
+            // Scroll up or near top, show
+            setHideNavbar(false);
+          }
+          setLastScrollY(currentScrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line
+  }, [lastScrollY]);
+
+  return (
+    <>
+      <header
+        className={cn(
+          "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500",
+          "backdrop-blur-lg bg-white/70 shadow-md",
+          "border-b border-white/30",
+          "motion-safe:transition-transform motion-safe:duration-400",
+          hideNavbar ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100",
+        )}
+        style={{ WebkitBackdropFilter: "blur(16px)" }}
+      >
         <div className="container mx-auto flex items-center justify-between px-4 py-[2px]">
           <div className="flex-1 flex justify-start">
             {/* Burger menu always visible */}
@@ -78,9 +99,19 @@ const Navbar = () => {
             </Button>
 
             {/* Mobile: icon-only, circular button */}
-            <Button variant="default" size="icon" onClick={() => setShowContact(true)} aria-label="Contact us" className={cn("flex md:hidden items-center justify-center rounded-full bg-travel-gold text-travel-navy shadow-sm p-0 w-10 h-10 hover:bg-[#f2e368] border-2 border-travel-gold transition-colors focus:ring-2 focus:ring-travel-navy", "mx-0")} style={{
-            boxShadow: "0 2px 4px rgba(26,32,44,0.08)"
-          }}>
+            <Button
+              variant="default"
+              size="icon"
+              onClick={() => setShowContact(true)}
+              aria-label="Contact us"
+              className={cn(
+                "flex md:hidden items-center justify-center rounded-full bg-travel-gold text-travel-navy shadow-sm p-0 w-10 h-10 hover:bg-[#f2e368] border-2 border-travel-gold transition-colors focus:ring-2 focus:ring-travel-navy",
+                "mx-0"
+              )}
+              style={{
+                boxShadow: "0 2px 4px rgba(26,32,44,0.08)"
+              }}
+            >
               <Contact size={22} />
             </Button>
           </div>
@@ -96,7 +127,15 @@ const Navbar = () => {
               </button>
             </div>
             <div className="mt-4">
-              <MobileMenu isOpen={isOpen} navLinks={navLinks} isActive={isActive} servicesOpen={false} setServicesOpen={() => {}} inDrawer={true} closeDrawer={() => setIsOpen(false)} />
+              <MobileMenu
+                isOpen={isOpen}
+                navLinks={navLinks}
+                isActive={isActive}
+                servicesOpen={false}
+                setServicesOpen={() => {}}
+                inDrawer={true}
+                closeDrawer={() => setIsOpen(false)}
+              />
             </div>
           </DrawerContent>
         </Drawer>
@@ -116,7 +155,10 @@ const Navbar = () => {
           </DrawerContent>
         </Drawer>
       </header>
+      {/* Offset for fixed navbar */}
       <div className="h-20"></div>
-    </>;
+    </>
+  );
 };
+
 export default Navbar;
