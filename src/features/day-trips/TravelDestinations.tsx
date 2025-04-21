@@ -27,7 +27,7 @@ const destinations: Destination[] = [
     id: 'edinburgh',
     name: 'Edinburgh',
     description: 'Discover the medieval Old Town, majestic castle, and stunning views in Scotland\'s historic capital.',
-    image: 'https://images.unsplash.com/photo-1580746738099-75b3b5a43c55?auto=format&fit=crop&w=800&q=80',
+    image: 'https://media.chillisauce.com/image/upload/c_fill,q_auto,f_auto,dpr_2,w_600/60f11ff6655a5129d546?auto=format&fit=crop&w=8',
     location: 'Scotland',
     featured: true
   },
