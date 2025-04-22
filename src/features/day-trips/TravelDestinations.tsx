@@ -51,7 +51,7 @@ const destinations: Destination[] = [
     id: 'liverpool',
     name: 'Liverpool',
     description: 'Experience the birthplace of The Beatles and explore its maritime history and cultural attractions.',
-    image: 'https://i0.wp.com/thingshelenloves.com/wp-content/uploads/2024/08/IMG_1337.jpeg?resize=750%2C1000&ssl=1?auto=format&fit=crop&w=800&q=80',
+    image: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/12/64/c1/62.jpg?auto=format&fit=crop&w=800&q=80',
     location: 'Merseyside, England',
     featured: true
   },
@@ -59,7 +59,7 @@ const destinations: Destination[] = [
     id: 'cambridge',
     name: 'Cambridge',
     description: 'Tour the prestigious university city and enjoy punting along the scenic River Cam.',
-    image: 'https://images.unsplash.com/photo-1597524678053-5e6dae98a29c?auto=format&fit=crop&w=800&q=80',
+    image: 'https://cdn.getyourguide.com/img/location/5b1450f00ed7d.jpeg/68.jpg?auto=format&fit=crop&w=800&q=80',
     location: 'Cambridgeshire, England',
     featured: true
   },
@@ -67,42 +67,42 @@ const destinations: Destination[] = [
     id: 'cardiff',
     name: 'Cardiff',
     description: 'Explore the Welsh capital with its impressive castle, beautiful bay area, and vibrant cultural scene.',
-    image: 'https://images.unsplash.com/photo-1595916707038-8a4736ba2a5d?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.ctfassets.net/uiu4umqyl5b5/1oLC5tQHieRMgym9dKnvzK/083e67ff3e621b57306d6835716c72f1/jonny-gios-SQQ81UjpoW4-unsplash-1.jpg?fm=webp&f=center?auto=format&fit=crop&w=800&q=80',
     location: 'Wales'
   },
   {
     id: 'manchester',
     name: 'Manchester',
     description: 'Discover this vibrant northern city known for its industrial heritage, music scene, and football culture.',
-    image: 'https://images.unsplash.com/photo-1612002254399-57b75b9d79e2?auto=format&fit=crop&w=800&q=80',
+    image: 'https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,f_jpg,h_822,q_75,w_1220/http://manchester.newmindmedia.com/wsimgs/olympic-parade_1992645352.jpg?auto=format&fit=crop&w=800&q=80',
     location: 'Greater Manchester, England'
   },
   {
     id: 'belfast',
     name: 'Belfast',
     description: 'Visit Northern Ireland\'s capital, home to the Titanic Museum and gateway to the Giant\'s Causeway.',
-    image: 'https://images.unsplash.com/photo-1569430044636-127e52e8fe62?auto=format&fit=crop&w=800&q=80',
+    image: 'https://irelandwide.com/wp-content/uploads/2023/02/Best-Northern-Ireland-Landmarks.jpg?auto=format&fit=crop&w=800&q=80',
     location: 'Northern Ireland'
   },
   {
     id: 'glasgow',
     name: 'Glasgow',
     description: 'Scotland\'s largest city offers Victorian architecture, a rich cultural scene, and friendly locals.',
-    image: 'https://images.unsplash.com/photo-1637265274869-49be19243371?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.scottishtours.co.uk/wwwroot/images/blog/8-The-Kelpies.jpg?auto=format&fit=crop&w=800&q=80',
     location: 'Scotland'
   },
   {
     id: 'oxford',
     name: 'Oxford',
     description: 'The "City of Dreaming Spires" is renowned for its prestigious university, beautiful architecture, and literary history.',
-    image: 'https://images.unsplash.com/photo-1604906145285-d44ccd3b6192?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.theenglishhome.co.uk/_gatsby/file/e4190c31d46b272255c52a2b95259cdc/ben-seymour-nqBUTBsDQNM-unsplash.jpg?auto=format&fit=crop&w=800&q=80',
     location: 'Oxfordshire, England'
   },
   {
     id: 'brighton',
     name: 'Brighton',
     description: 'This vibrant coastal city offers a famous pier, unique shopping in The Lanes, and a relaxed seaside atmosphere.',
-    image: 'https://images.unsplash.com/photo-1617219302953-5c115fa4b364?auto=format&fit=crop&w=800&q=80',
+    image: 'https://media.timeout.com/images/106033334/750/562/image.jpg?auto=format&fit=crop&w=800&q=80',
     location: 'East Sussex, England'
   }
 ];
