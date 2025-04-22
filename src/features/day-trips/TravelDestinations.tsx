@@ -67,7 +67,7 @@ const destinations: Destination[] = [
     id: 'cardiff',
     name: 'Cardiff',
     description: 'Explore the Welsh capital with its impressive castle, beautiful bay area, and vibrant cultural scene.',
-    image: 'https://images.ctfassets.net/uiu4umqyl5b5/1oLC5tQHieRMgym9dKnvzK/083e67ff3e621b57306d6835716c72f1/jonny-gios-SQQ81UjpoW4-unsplash-1.jpg?fm=webp&f=center?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.historyhit.com/app/uploads/bis-images/5154787/Cardiff-Castle-1-750x537-f50_50.jpg?x28777?auto=format&fit=crop&w=800&q=80',
     location: 'Wales'
   },
   {
