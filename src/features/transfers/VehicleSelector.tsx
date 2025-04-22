@@ -4,6 +4,7 @@ import { Users, Briefcase, Info } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { toast } from 'sonner';
 
 const vehicles = [
   {
@@ -27,13 +28,28 @@ const vehicles = [
 ];
 
 const VehicleSelector: React.FC = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '447765793462';
+    const message = 'Hello! I would like to book a transfer service.';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+    
+    toast.success('Opening WhatsApp...', {
+      description: 'You will be redirected to WhatsApp to chat with us.'
+    });
+  };
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-travel-navy">Select Your Vehicle</h2>
-            <Button className="bg-black text-white hover:bg-gray-800">
+            <Button 
+              onClick={handleWhatsAppClick}
+              className="bg-black text-white hover:bg-gray-800"
+            >
               Book Now
             </Button>
           </div>
