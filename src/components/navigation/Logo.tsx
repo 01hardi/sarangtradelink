@@ -20,14 +20,9 @@ const Logo: React.FC<LogoProps> = () => {
           lineHeight: 0,
         }}
       >
-        <img
-          src="/lovable-uploads/0f2d455a-d21b-4947-8ca0-dd65f1adf8fd.png"
-          alt="Sarang Logo"
-          className="h-16 md:h-20 w-auto"
-          style={{
-            background: "transparent",
-          }}
-        />
+        <div className="h-16 md:h-20 w-auto text-2xl font-bold text-travel-navy">
+          Sarang
+        </div>
       </div>
     </Link>
   );
