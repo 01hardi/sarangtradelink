@@ -10,7 +10,7 @@ const FooterContactInfo = () => {
         <li className="flex">
           <MapPin size={18} className="text-travel-gold mr-3 flex-shrink-0 mt-1" />
           <span className="text-gray-300">
-            22 Wheelers Lane, Bradville, Milton Keynes, England, MK137HW
+            123 Westminster, London, UK SW1A 1AA
           </span>
         </li>
         <li className="flex">
