@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Map, PlaneTakeoff, CreditCard } from 'lucide-react';
 import InquiryForm from '@/components/InquiryForm';
@@ -25,7 +24,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-1">Our Office</h3>
-                  <p className="text-gray-300">123 Westminster, London, UK SW1A 1AA</p>
+                  <p className="text-gray-300">22 Wheelers Lane, Bradville, Milton Keynes, England, MK137HW</p>
                 </div>
               </div>
               <div className="flex items-start">

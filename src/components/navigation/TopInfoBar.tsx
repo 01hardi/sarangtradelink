@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Phone, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
 
@@ -46,7 +45,7 @@ const TopInfoBar = () => {
           </div>
           <div className="flex items-center space-x-1">
             <MapPin size={12} className="text-gray-400" />
-            <span className="hover:text-gray-200 transition-colors">123 Westminster, London</span>
+            <span className="hover:text-gray-200 transition-colors">22 Wheelers Lane, Milton Keynes</span>
           </div>
           <div className="flex items-center space-x-1">
             <Clock size={12} className="text-gray-400" />
