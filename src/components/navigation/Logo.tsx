@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 interface LogoProps {
@@ -12,7 +11,7 @@ const Logo: React.FC<LogoProps> = () => {
     }}>
         <img src="/lovable-uploads/6bb57aac-f917-4bd5-9b5f-5619c16d7960.png" alt="Sarang Logo" style={{
         background: "transparent"
-      }} className="h-16 md:h-10 w-auto" />
+      }} className="h-10 md:h-10 w-auto" />
       </div>
     </Link>;
 };
