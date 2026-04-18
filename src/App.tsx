@@ -13,6 +13,7 @@ import Accommodation from "./pages/Accommodation";
 import DayTrips from "./pages/DayTrips";
 import TransferServices from "./pages/TransferServices";
 import LondonExperience from "./pages/LondonExperience";
+import ParisTour from "./pages/ParisTour";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/services/day-trips" element={<DayTrips />} />
           <Route path="/services/transfer-services" element={<TransferServices />} />
           <Route path="/services/london-experience" element={<LondonExperience />} />
+          <Route path="/services/paris-tour" element={<ParisTour />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />

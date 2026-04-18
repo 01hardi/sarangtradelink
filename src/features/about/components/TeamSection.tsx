@@ -4,19 +4,19 @@ const TeamSection = () => {
   const teamMembers = [{
     name: "David Anderson",
     role: "Global Operations Director",
-    image: "/images/team-1.jpg"
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
   }, {
     name: "Sarah Chen",
     role: "International Partnerships",
-    image: "/images/team-2.jpg"
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
   }, {
     name: "Raj Patel",
     role: "Regional Director - Asia",
-    image: "/images/team-3.jpg"
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
   }, {
     name: "Emma Thompson",
     role: "Client Relations Manager",
-    image: "/images/team-4.jpg"
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
   }];
   return <section className="py-16">
       

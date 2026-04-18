@@ -14,7 +14,7 @@ const blogPosts = [
     id: 1,
     title: "Top 10 Must-Visit Attractions in London",
     excerpt: "Discover the iconic landmarks and hidden gems that make London one of the world's most visited cities.",
-    image: "/images/blog-1.jpg",
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     date: "June 15, 2023",
     author: "Emma Thompson",
     category: "Attractions"
@@ -23,7 +23,7 @@ const blogPosts = [
     id: 2,
     title: "A Complete Guide to London's Public Transportation",
     excerpt: "Navigate London like a local with our comprehensive guide to the city's efficient public transport system.",
-    image: "/images/blog-2.jpg",
+    image: "https://images.unsplash.com/photo-1520967824895-b4568b3ce2e3?auto=format&fit=crop&w=800&q=80",
     date: "May 28, 2023",
     author: "James Wilson",
     category: "Travel Tips"
@@ -32,7 +32,7 @@ const blogPosts = [
     id: 3,
     title: "Best London Food Markets for Culinary Enthusiasts",
     excerpt: "Explore London's vibrant food scene through its diverse markets offering flavors from around the world.",
-    image: "/images/blog-3.jpg",
+    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80",
     date: "April 12, 2023",
     author: "Sarah Chen",
     category: "Food & Dining"
@@ -41,7 +41,7 @@ const blogPosts = [
     id: 4,
     title: "London on a Budget: Free Activities and Attractions",
     excerpt: "Experience the best of London without breaking the bank with our guide to free museums, parks, and events.",
-    image: "/images/blog-4.jpg",
+    image: "https://images.unsplash.com/photo-1498378624751-ead6e3b57fcd?auto=format&fit=crop&w=800&q=80",
     date: "March 5, 2023",
     author: "David Patel",
     category: "Budget Travel"
@@ -50,7 +50,7 @@ const blogPosts = [
     id: 5,
     title: "Day Trips from London: Exploring Beyond the City",
     excerpt: "Venture beyond London's borders to discover charming towns, historic sites, and beautiful countryside.",
-    image: "/images/blog-5.jpg",
+    image: "https://images.unsplash.com/photo-1494922275507-58dc039ed337?auto=format&fit=crop&w=800&q=80",
     date: "February 20, 2023",
     author: "Emma Thompson",
     category: "Day Trips"
@@ -59,7 +59,7 @@ const blogPosts = [
     id: 6,
     title: "London's Most Instagrammable Spots Revealed",
     excerpt: "Capture the perfect shots for your social media at these photogenic London locations.",
-    image: "/images/blog-6.jpg",
+    image: "https://images.unsplash.com/photo-1618430419986-453075243b7a?auto=format&fit=crop&w=800&q=80",
     date: "January 10, 2023",
     author: "James Wilson",
     category: "Photography"
@@ -86,7 +86,7 @@ const Blog = () => {
     <Layout>
       {/* Hero Section */}
       <div className="relative bg-travel-navy py-20">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/blog-bg.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">Our Blog</h1>
           <Breadcrumb className="text-white">

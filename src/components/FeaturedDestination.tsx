@@ -12,6 +12,7 @@ interface FeaturedDestinationProps {
   href: string;
   className?: string;
   imagePosition?: 'left' | 'right';
+  objectPosition?: string;
 }
 
 const FeaturedDestination: React.FC<FeaturedDestinationProps> = ({
@@ -20,7 +21,8 @@ const FeaturedDestination: React.FC<FeaturedDestinationProps> = ({
   imageUrl,
   href,
   className,
-  imagePosition = 'right'
+  imagePosition = 'right',
+  objectPosition
 }) => {
   return (
     <div 
@@ -35,7 +37,7 @@ const FeaturedDestination: React.FC<FeaturedDestinationProps> = ({
         <img 
           src={imageUrl} 
           alt={title}
-          className="w-full h-full object-cover image-zoom"
+          className={cn("w-full h-full object-cover image-zoom", objectPosition)}
           onError={(e) => {
             // Fallback to a placeholder image if the original fails to load
             const target = e.target as HTMLImageElement;
