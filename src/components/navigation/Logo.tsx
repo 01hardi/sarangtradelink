@@ -9,7 +9,7 @@ const Logo: React.FC<LogoProps> = () => {
       <div className="bg-transparent rounded flex items-center" style={{
       lineHeight: 0
     }}>
-        <img src="/lovable-uploads/6bb57aac-f917-4bd5-9b5f-5619c16d7960.png" alt="Sarang Logo" style={{
+        <img src="/photo-uploads/0f2d455a-d21b-4947-8ca0-dd65f1adf8fd.png" alt="Sarang Logo" style={{
         background: "transparent"
       }} className="h-10 md:h-10 w-auto" />
       </div>
