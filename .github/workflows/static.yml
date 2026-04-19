@@ -1,4 +1,5 @@
 # Workflow for building Vite/React app and deploying to GitHub Pages
+# Triggering new run...
 name: Deploy Vite app to GitHub Pages
 
 on:
